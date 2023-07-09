@@ -30,5 +30,5 @@
 }
 
 .active{
-    @apply bg-gradient-to-r from-[#2a2846] to-[#32304b]
+    @apply bg-gradient-to-r from-[#2a2846] to-[#32304b] text-white
 }

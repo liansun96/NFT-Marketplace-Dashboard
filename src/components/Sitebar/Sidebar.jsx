@@ -13,13 +13,13 @@ const Sidebar = () => {
   const [showAuth, setShowAuth] = useState(false);
 
   const location = useLocation();
-  const isActiveDash =
-    location.pathname.startsWith("/crm") ||
-    location.pathname.startsWith("/default");
-  const isActiveIndex = location.pathname === "/";
-  const isActiveOtherRoute = !isActiveIndex;
-
-  const isActivePage = location.pathname.startsWith("/account");
+  const isActiveBids =
+    location.pathname.startsWith("/bids-list") ||
+    location.pathname.startsWith("/create-new-bid");
+  
+  const isActiveCollection =
+    location.pathname.startsWith("/collection-list") ||
+    location.pathname.startsWith("/create-new-collection");
 
   return (
     <div className="h-screen overflow-y-scroll bg-primary text-body_text sticky top-0 left-0 custom-dark-shadow">
@@ -31,7 +31,7 @@ const Sidebar = () => {
         />
         <div className="h-14 2xl:h-16">
           <p className="text-base font-semibold">Mazanov Sky</p>
-          <p className="text-xs bg-purple text-center text-white font-light px-3 py-[1px] rounded inline-block mt-3 2xl:mt-5">
+          <p className="text-xs bg-purple text-center text-white font-light px-3 py-[1px] rounded inline-block mt- 2xl:mt-5">
             Premium user
           </p>
         </div>
@@ -60,27 +60,24 @@ const Sidebar = () => {
       </div>
       <ul className="transition-all px-4 py-6">
         <li className="w-full">
-          <Link
-            className={`${isActiveOtherRoute ? "" : "active"}
-           ${
-             isActiveDash
-               ? "active flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d] py-4 px-4 rounded-full"
-               : ""
-           }flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d] py-4 px-4 rounded-full`}
+          <NavLink
+            className={`flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d]  py-4 px-4 rounded-full`}
+            to={"/"}
           >
             <div className="flex gap-3 2xl:gap-4 w-full">
               <BsSpeedometer className="text-xl" />
               <p className="text-sm font-semibold">Dashboards</p>
             </div>
-          </Link>
+          </NavLink>
         </li>
         <li onClick={() => setShowBids(!showBids)}>
           <Link
-            className={`${
-              isActivePage
-                ? "active flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d]  py-4 px-4 rounded-full"
-                : ""
-            }flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d]  py-4 px-4 rounded-full`}
+            className={`
+           ${
+             isActiveBids
+               ? "active flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d] py-4 px-4 rounded-full"
+               : ""
+           }flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d] py-4 px-4 rounded-full`}
           >
             <div className="flex gap-3 2xl:gap-4">
               <BsHammer className="text-xl" />
@@ -97,19 +94,27 @@ const Sidebar = () => {
               showBids ? "min-h-max opacity-100" : "h-0 opacity-0 hidden"
             } duration-10 ms-16 text-xs font-bold cursor-pointer`}
           >
-            <NavLink to={"/"}>
+            <NavLink to={"/bids-list"}>
               <li className="sub-site-link my-3 hover:text-white sub-menu">
                 Bids List
               </li>
             </NavLink>
-            <li className="sub-site-link mb-3 hover:text-white sub-menu">
-              Create New
-            </li>
+            <NavLink to={"/create-new-bid"}>
+              <li className="sub-site-link mb-3 hover:text-white sub-menu">
+                Create New
+              </li>
+            </NavLink>
           </ul>
         </li>
 
         <li onClick={() => setShowCollection(!showCollection)}>
-          <Link className="flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d]  py-4 px-4 rounded-full">
+          <Link
+            className={`${
+              isActiveCollection
+                ? "active flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d] py-4 px-4 rounded-full"
+                : ""
+            }flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d] py-4 px-4 rounded-full`}
+          >
             <div className="flex gap-3 2xl:gap-4">
               <BsFillGridFill className="transform -scale-y-100 text-lg" />
               <p className="text-sm font-semibold">Collection</p>
@@ -126,12 +131,16 @@ const Sidebar = () => {
               showCollection ? "min-h-max opacity-100" : "h-0 opacity-0 hidden"
             } duration-10 ms-16 text-xs font-bold cursor-pointer`}
           >
-            <li className="sub-site-link my-3 hover:text-white sub-menu">
-              Collection List
-            </li>
-            <li className="sub-site-link mb-3 hover:text-white sub-menu">
-              Create New
-            </li>
+            <NavLink to={"/collection-list"}>
+              <li className="sub-site-link my-3 hover:text-white sub-menu">
+                Collection List
+              </li>
+            </NavLink>
+            <NavLink to={"/create-new-collection"}>
+              <li className="sub-site-link mb-3 hover:text-white sub-menu">
+                Create New
+              </li>
+            </NavLink>
           </ul>
         </li>
         <li onClick={() => setShowWallet(!showWallet)}>
