@@ -1,9 +1,12 @@
 import React from 'react'
 import Path from './routes/Path'
+import { stateContextCustom } from './context/StateContext';
 
 const App = () => {
+  const { hide } = stateContextCustom();
+
   return (
-    <div className='font-Poppins'>
+    <div onClick={hide} className='font-Poppins'>
       <Path/>
     </div>
   )
