@@ -6,7 +6,7 @@ import CreateNewBid from "../components/liveBids/CreateNewBid";
 import CollectionList from "../components/collection/CollectionList";
 import CreateNewCollection from "../components/collection/CreateNewCollection";
 import Wallet from "../pages/Wallet";
-import Charts from "../components/Charts/Charts";
+import Charts from "../pages/Charts";
 
 const Path = () => {
   return (
