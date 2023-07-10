@@ -11,7 +11,7 @@ import TrendingCard from "./TrendingCard";
 
 const TrendingActions = () => {
   return (
-    <div className="flex flex-col gap-5 justify-between py-5 ps-5 bg-secondary rounded-xl w-[49%]">
+    <div className="flex flex-col gap-5 justify-between py-5 ps-5 bg-secondary rounded-xl xl:w-[50%] 2xl:w-[49%]">
       <div className="flex items-center gap-1">
         <div className="">
           <img

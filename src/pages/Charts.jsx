@@ -12,7 +12,7 @@ import TopBuyers from "../components/Charts/TopBuyers";
 const Charts = () => {
   return (
     <div className="bg-primary flex flex-col">
-      <div className=" w-full 2xl:w-[80%] 3xl:w-[70%] 4xl:[60%] mx-auto">
+      <div className=" w-full 3xl:w-[80%] 4xl:[60%] mx-auto">
         <Navbar />
         <div className="flex flex-col items-center justify-between gap-5 p-5 mx-auto w-[95%]">
           <section className="flex items-center justify-between gap-5 w-full h-full">
