@@ -12,7 +12,7 @@ const Path = () => {
   return (
     <Routes>
       <Route path="/" element={<Dashboard />}>
-        <Route path="/charts" element={<Charts/>}/>
+        <Route path="/charts" element={<Charts />} />
         <Route path="/bids-list" element={<BidsList />} />
         <Route path="/create-new-bid" element={<CreateNewBid />} />
         <Route path="/collection-list" element={<CollectionList />} />
