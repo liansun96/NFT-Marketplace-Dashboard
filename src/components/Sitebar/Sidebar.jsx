@@ -66,7 +66,7 @@ const Sidebar = () => {
         <li className="w-full">
           <NavLink
             className={`flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d]  py-4 px-4 rounded-full`}
-            to={"/"}
+            to={"/charts"}
           >
             <div className="flex gap-3 2xl:gap-4 w-full">
               <BsSpeedometer className="text-xl" />

@@ -9,7 +9,7 @@ const Category = () => {
   return (
     <div className="w-[95%] mx-auto py-4">
       <div className="flex justify-between gap-5 category-bg cartgory-shadow p-4 rounded-xl">
-        <div className="h-[130px] w-full">
+        <div className="h-[130px] hover:border hover:border-purple duration-500 w-full">
           <div className="flex justify-center items-center h-[130px] gap-6">
             <div className="flex justify-center items-center bg-[#1fbcff] w-[70px] h-[70px] rounded-full">
               <FaImage className="text-primary text-3xl" />
@@ -48,7 +48,7 @@ const Category = () => {
               <IoTrashBin className="text-primary text-3xl" />
             </div>
             <div className="text-body_text tracking-wider">
-              <p className="text-lg font-medium">Artboard</p>
+              <p className="text-lg font-medium">Canceled</p>
               <p className="text-3xl font-bold text-white">932</p>
             </div>
           </div>
