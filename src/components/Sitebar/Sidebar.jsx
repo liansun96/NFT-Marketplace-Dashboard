@@ -16,10 +16,14 @@ const Sidebar = () => {
   const isActiveBids =
     location.pathname.startsWith("/bids-list") ||
     location.pathname.startsWith("/create-new-bid");
-  
+
   const isActiveCollection =
     location.pathname.startsWith("/collection-list") ||
     location.pathname.startsWith("/create-new-collection");
+
+  const isActiveWallet =
+    location.pathname.startsWith("/wallet") ||
+    location.pathname.startsWith("/recharge");
 
   return (
     <div className="h-screen overflow-y-scroll bg-primary text-body_text sticky top-0 left-0 custom-dark-shadow">
@@ -144,7 +148,13 @@ const Sidebar = () => {
           </ul>
         </li>
         <li onClick={() => setShowWallet(!showWallet)}>
-          <Link className="flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d]  py-4 px-4 rounded-full">
+          <Link
+            className={`${
+              isActiveWallet
+                ? "active flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d] py-4 px-4 rounded-full"
+                : ""
+            }flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d] py-4 px-4 rounded-full`}
+          >
             <div className="flex gap-3 2xl:gap-4">
               <IoIosWallet className="text-xl" />
               <p className="text-sm font-semibold">Wallet</p>
@@ -159,12 +169,16 @@ const Sidebar = () => {
               showWallet ? "min-h-max opacity-100" : "h-0 opacity-0 hidden"
             } duration-10 ms-16 text-xs font-bold cursor-pointer`}
           >
-            <li className="sub-site-link my-3 hover:text-white sub-menu">
-              My Wallet
-            </li>
-            <li className="sub-site-link mb-3 hover:text-white sub-menu">
-              Recharge
-            </li>
+            <NavLink to="/wallet">
+              <li className="sub-site-link my-3 hover:text-white sub-menu">
+                My Wallet
+              </li>
+            </NavLink>
+            <NavLink to={"/recharge"}>
+              <li className="sub-site-link mb-3 hover:text-white sub-menu">
+                Recharge
+              </li>
+            </NavLink>
           </ul>
         </li>
         <li onClick={() => setShowAuth(!showAuth)}>

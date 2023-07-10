@@ -11,6 +11,7 @@ const Path = () => {
   return (
     <Routes>
       <Route path="/" element={<Dashboard />}>
+        
         <Route path="/bids-list" element={<BidsList />} />
         <Route path="/create-new-bid" element={<CreateNewBid />} />
         <Route path="/collection-list" element={<CollectionList />} />
