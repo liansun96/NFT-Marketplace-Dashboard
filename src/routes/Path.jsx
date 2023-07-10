@@ -6,11 +6,13 @@ import CreateNewBid from "../components/liveBids/CreateNewBid";
 import CollectionList from "../components/collection/CollectionList";
 import CreateNewCollection from "../components/collection/CreateNewCollection";
 import Wallet from "../pages/Wallet";
+import Charts from "../components/Charts/Charts";
 
 const Path = () => {
   return (
     <Routes>
       <Route path="/" element={<Dashboard />}>
+        <Route path="/charts" element={<Charts/>}/>
         <Route path="/bids-list" element={<BidsList />} />
         <Route path="/create-new-bid" element={<CreateNewBid />} />
         <Route path="/collection-list" element={<CollectionList />} />

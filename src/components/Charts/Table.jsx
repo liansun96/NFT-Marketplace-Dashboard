@@ -1,0 +1,101 @@
+import React, { useState } from "react";
+import { activities } from "./Activity";
+import {
+  AiOutlineShoppingCart,
+  AiOutlinePercentage,
+  AiOutlineClockCircle,
+} from "react-icons/ai";
+
+const Table = () => {
+  const [activeButton, setActiveButton] = useState("");
+
+  const handleButtonClick = (button) => {
+    setActiveButton(button);
+  };
+
+  return (
+    <div className="flex flex-col items-center justify-between gap-5 p-5 w-[49%] bg-gray-800 rounded-xl">
+      <div className="flex items-center justify-between w-full">
+        <div>
+          <h5 className="text-xl font-semibold text-white">Activity</h5>
+        </div>
+        <div className="flex items-center gap-3">
+          <button
+            className={`text-white text-sm px-3 py-1 rounded-3xl ${
+              activeButton === "today" ? "bg-purple-800" : "bg-transparent"
+            }`}
+            onClick={() => handleButtonClick("today")}
+          >
+            Today
+          </button>
+          <button
+            className={`text-white text-sm px-3 py-1 rounded-3xl ${
+              activeButton === "7day" ? "bg-purple-800" : "bg-transparent"
+            }`}
+            onClick={() => handleButtonClick("7day")}
+          >
+            7 Day
+          </button>
+          <button
+            className={`text-white text-sm px-3 py-1 rounded-3xl ${
+              activeButton === "30day" ? "bg-purple-800" : "bg-transparent"
+            }`}
+            onClick={() => handleButtonClick("30day")}
+          >
+            30 Day
+          </button>
+        </div>
+      </div>
+
+      <div className="w-full overflow-x-scroll">
+        <table className="w-[650px]">
+          <thead className="hidden">
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Dis</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody >
+            {activities.map((activity) => (
+              <tr key={activity.id}>
+                <td className="px-5 h-[58px] border-b border-t border-l border-gray-700 ">
+                  <div className="flex items-center gap-2">
+                    <div className="">
+                      <img src={activity.image} className="h-[20px]" alt="" />
+                    </div>
+                    <p className="text-white text-sm font-semibold">
+                      {activity.name}
+                    </p>
+                  </div>
+                </td>
+                <td className="px-5 h-[58px] border-b border-t border-gray-700 text-white text-sm font-semibold">
+                  {activity.price}
+                </td>
+                <td className="px-5 h-[58px] border-b border-t border-gray-700 text-white text-sm">
+                  <div className="flex items-center gap-1">
+                    <div>
+                      {activity.dis === "Sales" && <AiOutlineShoppingCart />}
+                      {activity.dis === "Discount" && <AiOutlinePercentage />}
+                      {activity.dis === "Offer" && <AiOutlinePercentage />}
+                    </div>
+                    {activity.dis}
+                  </div>
+                </td>
+                <td className="px-5 h-[58px] border-b border-t border-e border-gray-700 text-white text-sm">
+                  <div className="flex items-center">
+                    <AiOutlineClockCircle />
+                    {activity.time}
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
+
+export default Table;
