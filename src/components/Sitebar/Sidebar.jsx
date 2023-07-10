@@ -16,7 +16,7 @@ const Sidebar = () => {
   const isActiveBids =
     location.pathname.startsWith("/bids-list") ||
     location.pathname.startsWith("/create-new-bid");
-  
+
   const isActiveCollection =
     location.pathname.startsWith("/collection-list") ||
     location.pathname.startsWith("/create-new-collection");
@@ -159,9 +159,11 @@ const Sidebar = () => {
               showWallet ? "min-h-max opacity-100" : "h-0 opacity-0 hidden"
             } duration-10 ms-16 text-xs font-bold cursor-pointer`}
           >
-            <li className="sub-site-link my-3 hover:text-white sub-menu">
-              My Wallet
-            </li>
+            <NavLink to={"/wallet"}>
+              <li className="sub-site-link my-3 hover:text-white sub-menu">
+                My Wallet
+              </li>
+            </NavLink>
             <li className="sub-site-link mb-3 hover:text-white sub-menu">
               Recharge
             </li>

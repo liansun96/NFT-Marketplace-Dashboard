@@ -7,7 +7,7 @@ const Languages = () => {
 
   return (
     <ul
-      className={`shadow-lg flex flex-col mt-3 justify-center py-2 w-40 rounded-lg bg-white`}
+      className={`shadow-lg flex flex-col mt-3 justify-center py-2 w-40 rounded-lg bg-transparent backdrop-blur-lg`}
     >
       {language.map((i) => {
         const currentImg = i.image;

@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiSolidCheckCircle } from "react-icons/bi";
 
 export default function QuickTransfer() {
+  const [value, setValue] = useState(23456); // Initial value
+
+  const handleInputChange = (event) => {
+    setValue(event.target.value);
+  };
   return (
     <div>
       <h2 className="text-white font-bold text-xl mt-10 mb-5">
@@ -24,9 +29,16 @@ export default function QuickTransfer() {
         </div>
         <div>
           <h4 className="text-center my-5 text-sm">Insert Amount</h4>
-          <h4 className="text-center my-5 text-3xl font-bold">597</h4>
-          
-          <input type="range" className="w-full" />
+          <h4 className="text-center my-5 text-3xl font-bold">{value}</h4>
+
+          <input
+            type="range"
+            min="0"
+            max="88455"
+            value={value}
+            onChange={handleInputChange}
+            className="w-full accent-[#E039FD]  bg-white h-1 rounded-full"
+          />
 
           <div className="flex items-center justify-between text-sm mb-5">
             <p>Your balance</p>

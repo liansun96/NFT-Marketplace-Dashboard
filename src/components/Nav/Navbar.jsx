@@ -1,6 +1,6 @@
 import React from "react";
 import { BiSearch } from "react-icons/bi";
-import { PiSunBold, PiBell } from "react-icons/pi";
+import { PiBell, PiMoon } from "react-icons/pi";
 import { MdOutlineSettings } from "react-icons/md";
 import { stateContextCustom } from "../../context/StateContext";
 import uk from "../../assets/icons8-great-britain-96.png";
@@ -49,7 +49,7 @@ const Navbar = () => {
           {/* Select Theme */}
           <div className="relative mx-5">
             <button onClick={toggleShow} className="nav-btn">
-              <PiSunBold className="" />
+              <PiMoon className="" />
             </button>
             <div
               onClick={() => setShow(false)}
@@ -59,7 +59,7 @@ const Navbar = () => {
             </div>
           </div>
           {/* Select Languages */}
-          <div className="relative px-5 border-l">
+          <div className="relative">
             <button onClick={toggleLanguage} className="nav-btn">
               <img src={image ? image : uk} alt="" className="w-[30px]" />
             </button>
@@ -80,12 +80,12 @@ const Navbar = () => {
                 : null
             }
           ></div>
-          <div className="flex gap-5 border-x px-5">
+          <div className="flex gap-5 px-5">
             {/* Notification */}
             <div className="relative">
               <button onClick={toggleNoti} className="nav-btn">
                 <PiBell />
-                <span className="text-xs bg-red-500 rounded-full text-white px-1.5 absolute -top-2 -right-3 z-10">
+                <span className="text-xs bg-gradient-to-r from-[#df2cff] to-[#6345ed] rounded-full text-white px-1.5 absolute -top-2 -right-3 z-10">
                   20+
                 </span>
               </button>
@@ -97,19 +97,6 @@ const Navbar = () => {
             >
               <NotiSidebar />
             </div>
-            {/* Settings */}
-            <div className="relative ">
-              <button onClick={toggleSetting} className="nav-btn">
-                <MdOutlineSettings className=" animate-spin" />
-              </button>
-            </div>
-            <div
-              className={`${
-                !showSetting ? "translate-x-[400px]" : "translate-x-0"
-              } w-[400px] fixed right-0 top-0 transition-all ease-linear duration-200 h-screen bg-white z-10 overflow-y-scroll `}
-            >
-              <SettingSidebar />
-            </div>
           </div>
           {/* Profile */}
           <div className="relative cursor-pointer">
@@ -119,7 +106,7 @@ const Navbar = () => {
             >
               <img
                 className=""
-                src="https://d33wubrfki0l68.cloudfront.net/053f2dfd0df2f52c41e903a21d177b0b44abc9b1/1282c/assets/images/profiles/profile-06.jpeg"
+                src="http://funto.designing-world.com/img/bg-img/u2.jpg"
                 alt=""
               />
             </div>

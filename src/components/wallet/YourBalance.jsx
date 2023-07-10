@@ -4,6 +4,7 @@ import {SlWallet} from "react-icons/sl";
 import { TbReceiptTax } from "react-icons/tb";
 import { BiMoneyWithdraw } from "react-icons/bi";
 import Chart from "./Chart";
+import CountUp from "react-countup";
 
 export default function YourBalance() {
   return (
@@ -16,7 +17,9 @@ export default function YourBalance() {
             </div>
             <div className="mb-10">
               <h2 className={"text-sm text-white font-bold"}>This Month</h2>
-              <p className={"text-3xl text-white font-bold py-3"}>$ 23,741.00</p>
+              <p className={"text-3xl text-white font-bold py-3"}>$ 
+              <CountUp end={23741.98} decimals={2} duration={2}/>
+              </p>
               <p className="flex gap-3 items-center text-[#E039FD] text-sm">
                 <BsArrowUpCircleFill className={`bg-white rounded-full text-lg`}/>
                 +15%

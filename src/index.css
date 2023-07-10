@@ -10,14 +10,14 @@
     @apply w-[40px] h-[40px] text-xl text-white bg-[#131129] rounded-full shadow flex items-center justify-center
 }
 .nav-dropdown{
-    @apply  flex items-center px-3 py-2 gap-3 cursor-pointer select-none
+    @apply  flex items-center px-3 py-2 gap-3 cursor-pointer select-none text-white text-sm
 }
 .nav-dropdown:hover {
-    @apply bg-[#F6F7F8]
+    @apply bg-gradient-to-r from-[#df2cff] to-[#6345ed] bg-clip-text text-transparent
 }
-.selected{
-    @apply text-white bg-[#00BAC7] !important
-}
+/* .selected{
+    @apply text-white bg-gradient-to-r from-[#df2cff] to-[#6345ed] !important
+} */
 .navigation {
     color: #00BAC7;
 }
