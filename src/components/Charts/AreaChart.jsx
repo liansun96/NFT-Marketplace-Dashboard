@@ -108,9 +108,9 @@ const AreaChart = () => {
 
   return (
     <div className="w-[50%]">
-      <div className="flex flex-col gap-5 p-5 justify-between bg-gray-900 rounded-2xl">
+      <div className="flex flex-col gap-5 p-5 justify-between bg-secondary rounded-2xl">
         <div className="">
-          <h5 className="text-xl font-semibold text-white">Montly Visitors</h5>
+          <h5 className="text-xl font-semibold text-heading_text">Montly Visitors</h5>
         </div>
         <div className="">
           <Line data={data} options={options} height={222}/>
