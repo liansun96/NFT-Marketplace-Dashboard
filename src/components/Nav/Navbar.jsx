@@ -1,17 +1,14 @@
 import React from "react";
 import { BiSearch } from "react-icons/bi";
 import { PiSunBold, PiBell } from "react-icons/pi";
-import { RiAppsLine } from "react-icons/ri";
 import { MdOutlineSettings } from "react-icons/md";
 import { stateContextCustom } from "../../context/StateContext";
 import uk from "../../assets/icons8-great-britain-96.png";
 import Theme from "./Theme";
 import Languages from "./Languages";
-import ShowApps from "./ShowApps";
 import NotiSidebar from "./NotiSidebar";
 import SettingSidebar from "./SettingSidebar";
 import Profile from "./Profile";
-import Customize from "./Customize";
 
 const Navbar = () => {
   const {
@@ -21,7 +18,6 @@ const Navbar = () => {
     showLanguage,
     toggleLanguage,
     image,
-    toggleApps,
     showNoti,
     toggleNoti,
     showSetting,

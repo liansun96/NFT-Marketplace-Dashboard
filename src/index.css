@@ -7,7 +7,7 @@
     color: #00BAC7;
 }
 .nav-btn{
-    @apply w-[40px] h-[40px] text-xl text-[#9ea9b4] bg-white rounded-full shadow flex items-center justify-center
+    @apply w-[40px] h-[40px] text-xl text-white bg-[#131129] rounded-full shadow flex items-center justify-center
 }
 .nav-dropdown{
     @apply  flex items-center px-3 py-2 gap-3 cursor-pointer select-none

@@ -18,7 +18,7 @@ export default function YourBalance() {
               <h2 className={"text-sm text-white font-bold"}>This Month</h2>
               <p className={"text-3xl text-white font-bold py-3"}>$ 23,741.00</p>
               <p className="flex gap-3 items-center text-[#E039FD] text-sm">
-                <BsArrowUpCircleFill className={``}/>
+                <BsArrowUpCircleFill className={`bg-white rounded-full text-lg`}/>
                 +15%
               </p>
             </div>
@@ -39,9 +39,9 @@ export default function YourBalance() {
           </div>
           <div className={`flex items-center gap-2`}>
             <div className={` rounded-md p-1`}>
-              <BiMoneyWithdraw className={`text-3xl text-red-500`}/>
+              <BiMoneyWithdraw className={`text-3xl text-[#FF0000]`}/>
             </div>
-            <div className={`text-red-500 text-xs`}>
+            <div className={`text-[#FF0000] text-xs`}>
               <p>Expense</p>
               <h2 className={`text-lg font-semibold`}>$1234.43</h2>
             </div>

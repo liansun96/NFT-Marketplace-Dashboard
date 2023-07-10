@@ -39,6 +39,7 @@ const Chart = () => {
 
   const options = {
     maintainAspectRatio: false,
+    responsive: true,
     plugins: {
       legend: false,
       label: null,

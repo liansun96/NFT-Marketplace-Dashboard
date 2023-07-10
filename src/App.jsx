@@ -6,7 +6,7 @@ const App = () => {
   const { hide } = stateContextCustom();
 
   return (
-    <div onClick={hide} className='font-Poppins'>
+    <div onClick={hide} className='font-sans'>
       <Path/>
     </div>
   )
