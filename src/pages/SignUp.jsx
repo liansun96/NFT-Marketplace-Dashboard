@@ -1,33 +1,37 @@
-import {
-  FormLabel,
-  Input,
-  StyledEngineProvider,
-} from "@mui/joy";
-import React from "react";
+import { FormLabel, Input, StyledEngineProvider } from "@mui/joy";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "animate.css";
 import { stateContextCustom } from "../context/StateContext";
 import { LiaEye, LiaEyeSlash } from "react-icons/lia";
 
 export default function SignUp() {
-  const inputStyle = {
-    "--Input-focusedThickness": "0.08rem",
-    "--Input-focusedHighlight": "#00bac7",
-  };
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [password_confirmation, setPasswordConfirm] = useState("")
+
   const { showPass, toggleShowPass, showPassConfirm, toggleShowPassConfirm } =
     stateContextCustom();
   return (
     <StyledEngineProvider injectFirst>
-      <div className="w-full flex bg-[#F1F5F7] h-screen fixed">
-        <div className="md:basis-1/2 mx-auto px-5 lg:px-[58px] animate__animated animate__fadeInLeft">
-          <img
-            className="mb-20 sm:mb-5 lg:mb-20 py-7"
-            src="https://d33wubrfki0l68.cloudfront.net/ba6b91b7d508187d153e48318c22d0773a9cedfc/36afa/assets/images/logo.svg"
-            alt=""
-          />
+      <div className="w-full flex h-screen overflow-y-scroll overflow-x-hidden auth-bg fixed">
+        <div className="lg:basis-1/2 mx-auto px-5 lg:px-[58px] animate__animated animate__fadeInLeft">
+          <div className="flex gap-2 items-center my-10">
+            <img
+              className="w-6 h-fit"
+              src="https://themebeyond.com/html/nftmak/assets/img/logo/logo.png"
+              alt=""
+            />
+            <img
+              className=""
+              src="https://themebeyond.com/html/nftmak/assets/img/logo/naftmak.svg"
+              alt=""
+            />
+          </div>
           <div className="mb-10">
-            <h2 className="text-2xl font-bold mb-2">Free Sign Up</h2>
-            <p className="text-slate-400 text-sm">
+            <h2 className="text-2xl text-slate-300 font-bold mb-2">Create your account</h2>
+            <p className="text-slate-300 text-sm">
               Don't have an account? Create your account, it takes less than a
               minute
             </p>
@@ -36,62 +40,70 @@ export default function SignUp() {
             <div className="flex flex-col gap-5">
               <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
                 <div className="w-full">
-                  <FormLabel className="text-xs font-bold">
+                  <FormLabel className="text-xs font-bold text-slate-300 mb-2">
                     Full Name{" "}
                   </FormLabel>
                   <Input
-                    sx={inputStyle}
+                  onChange={(e) => setName(e.target.value) }
                     type="text"
-                    className="text-xs bg-[#F8FAFB] focus:shadow-[#00bac7]"
+                    color="white"
+                    className="text-xs border bg-transparent rounded-full text-slate-300 "
                     placeholder="Your full name"
                   />
                 </div>
                 <div className="w-full">
-                  <FormLabel className="text-xs font-bold">
+                  <FormLabel className="text-xs font-bold text-slate-300 mb-2">
                     Email Address
                   </FormLabel>
                   <Input
-                    sx={inputStyle}
+                    onChange={(e) => setEmail(e.target.value)}
+                    color="white"
                     type="email"
-                    className="text-xs bg-[#F8FAFB]"
+                    className="text-xs border rounded-full bg-transparent text-slate-300"
                     placeholder="Your email address"
+                    value={email}
                   />
                 </div>
               </div>
               <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
                 <div className="w-full">
-                  <FormLabel className="text-xs font-bold">
+                  <FormLabel className="text-xs font-bold text-slate-300 mb-2">
                     Your Password
                   </FormLabel>
                   <div className="relative">
                     <Input
-                      sx={inputStyle}
+                      onChange={(e) => setPassword(e.target.value)}
+
+                      color="white"
                       type={showPass ? "text" : "password"}
-                      className="text-xs bg-[#F8FAFB] relative"
+                      className="text-xs border rounded-full bg-transparent text-slate-300 relative"
                       placeholder="Your password"
+                      value={password}
                     />
                     <div
                       onClick={toggleShowPass}
-                      className="absolute right-5 bottom-3"
+                      className="absolute right-5 text-slate-300 bottom-3"
                     >
                       {!showPass ? <LiaEye /> : <LiaEyeSlash />}
                     </div>
                   </div>
                 </div>
                 <div className="w-full">
-                  <FormLabel className="text-xs font-bold">
+                  <FormLabel className="text-xs font-bold text-slate-300 mb-2">
                     Confirm Password
                   </FormLabel>
                   <div className="relative">
                     <Input
-                      sx={inputStyle}
+                    onChange={(e) => setPasswordConfirm(e.target.value)}
+
                       type={showPassConfirm ? "text" : "password"}
-                      className="text-xs bg-[#F8FAFB] relative"
+                      color="white"
+                      className="text-xs bg-transparent border rounded-full text-slate-300 relative"
                       placeholder="Your password again"
                     />
                     <div
                       onClick={toggleShowPassConfirm}
-                      className="absolute right-5 bottom-3"
+                      className="absolute text-slate-300 right-5 bottom-3"
                     >
                       {!showPassConfirm ? <LiaEye /> : <LiaEyeSlash />}
                     </div>
@@ -100,43 +112,47 @@ export default function SignUp() {
               </div>
             </div>
             <div className="flex items-center mt-5 gap-3">
-              <input id="checkbox" type="checkbox" />
+              <input id="checkbox" className="accent-purple w-8"  type="checkbox" />
               <label
                 htmlFor="checkbox"
-                className="text-[0.8rem] accent-cyan-500 text-slate-800 font-semibold"
+                className="text-[0.8rem] text-slate-300"
               >
                 I agree with{" "}
-                <span className="cursor-pointer text-[#00bac7]">
+                <span className="cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-[#B73DD5] to-[#6945EB]">
                   Terms & Conditions
                 </span>{" "}
                 and have understood{" "}
-                <span className="cursor-pointer text-[#00bac7]">
+                <span className="cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-[#B73DD5] to-[#6945EB]">
                   Privacy Policy
                 </span>
               </label>
             </div>
-            <Link to={"/"}>
-              <button className="px-7 mt-8 py-2.5 bg-[#00bac7] rounded-full text-sm text-white font-semibold w-fit">
-                Get Started
-              </button>
+            <Link to={"/sign-in"}>
+              <div className="transform duration-1000 my-10 w-fit transition hover:bg-gradient-to-l bg-gradient-to-r from-[#bc3cd3] to-[#6345ed] p-1 rounded-full">
+                <div className="border border-[#fff] border-dashed bg-transparent rounded-3xl">
+                  <button className="px-10 py-2 text-sm  font-bold text-heading_text">
+                    SIGN UP
+                  </button>
+                </div>
+              </div>
             </Link>
           </form>
           <div className="flex items-center gap-2 lg:absolute bottom-0 lg:py-10 py-9">
             <p className="text-sm text-slate-400">Already Register?</p>
             <Link
               to="/sign-in"
-              className="text-[#00bac7] text-sm font-bold cursor-pointer"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-[#B73DD5] to-[#6945EB] text-sm font-bold cursor-pointer"
             >
-              Login
+              Sign In
             </Link>
           </div>
         </div>
-        <div className="basis-1/2 hidden lg:block h-screen brightness-50">
-          <img
-            className="w-full h-screen object-cover animate__animated animate__fadeInRight"
-            src="https://dashly-theme.com/assets/images/covers/sign-up-cover.jpeg"
+        <div className="basis-1/2 hidden lg:block h-screen">
+          {/* <img
+            className="w-full scale-150 h-screen object-cover origin-right animate__animated animate__fadeInRight"
+            src="https://themebeyond.com/html/nftmak/assets/img/banner/banner_bg.jpg"
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </StyledEngineProvider>

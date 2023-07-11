@@ -8,6 +8,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.bg{
+    background-image: url("https://themebeyond.com/html/nftmak/assets/img/banner/banner_bg.jpg");
+    background-size: 1200px;
+    background-position: top;
+}
 
 *{
   box-sizing: border-box;

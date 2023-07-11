@@ -9,7 +9,7 @@ import Wallet from "../pages/Wallet";
 import Charts from "../components/Charts/Charts";
 import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
-import Charts from "../pages/Charts";
+// import Charts from "../pages/Charts";
 
 const Path = () => {
   return (
