@@ -2,7 +2,7 @@ import React from 'react'
 
 const TopSeller = () => {
   return (
-    <div className='w-[25%] bg-secondary px-5 py-6 rounded-xl'>
+    <div className='w-[25%] category-bg px-5 py-6 rounded-xl'>
         <div className="flex flex-col gap-4 justify-between">
           <div className="flex items-center justify-between">
             <h5 className='text-md text-heading_text font-semibold'>Top Seller</h5>
