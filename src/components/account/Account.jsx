@@ -65,7 +65,7 @@ const Account = () => {
                     alt=""
                   />
                 </div>
-                <span className="w-8 h-8 absolute right-0 bottom-0 border border-white text-center flex justify-center items-center text-[#C9C9C9] rounded-full bg-[#00BAC7]">
+                <span className="w-8 h-8 absolute right-0 bottom-0 border border-white text-center flex justify-center items-center text-[#C9C9C9] rounded-full bg-[#E039FD]">
                   <PiPencilDuotone />
                 </span>
               </div>
@@ -86,7 +86,7 @@ const Account = () => {
                         smooth={true}
                         offset={0}
                         duration={500}
-                        className="flex ps-5 py-3 hover:text-[#00BAC7] hover:border-s-2
+                        className="flex ps-5 py-3 hover:text-[#E039FD] hover:border-s-2
                  hover:border-s-[#00BAC7] text-[#C9C9C9]"
                       >
                         <div className="items-center flex me-3 text-lg">
@@ -99,7 +99,7 @@ const Account = () => {
                 })}
               </ul>
               <hr className="mx-auto my-5" />
-              <button className="bg-gray-400 p-3 px-6 rounded-full mx-auto flex hover:bg-secondary0 duration-150 text-[#C9C9C9] font-bold">
+              <button className="bg-gray-900 p-3 px-6 rounded-full mx-auto flex hover:bg-secondary0 duration-150 text-[#C9C9C9] font-bold">
                 View Public Profile
               </button>
               <br />
@@ -161,7 +161,7 @@ const Account = () => {
                       <button
                         id="states-button"
                         data-dropdown-toggle="dropdown-states"
-                        className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500 bg-secondary border-secondary rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-[#C9C9C9] dark:border-gray-600"
+                        className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500 bg-secondary border-secondary rounded-l-lg hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-secondary dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-[#C9C9C9] dark:border-gray-600"
                         type="button"
                       >
                         <svg
@@ -283,7 +283,7 @@ const Account = () => {
                       </button>
                       <div
                         id="dropdown-states"
-                        className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                        className="z-10 hidden bg-secondary divide-y divide-secondary rounded-lg shadow w-44 dark:bg-gray-700"
                       >
                         <ul
                           className="py-2 text-sm text-gray-700 dark:text-gray-200"
@@ -292,7 +292,7 @@ const Account = () => {
                           <li>
                             <button
                               type="button"
-                              className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-[#C9C9C9]"
+                              className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-secondary dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-[#C9C9C9]"
                             >
                               <div className="inline-flex items-center">
                                 <svg
@@ -448,7 +448,7 @@ const Account = () => {
                       </label>
                       <select
                         id="states"
-                        className="bg-secondary borderborder-secondary text-gray-500 text-sm rounded-r-lg border-l-gray-100 dark:border-l-gray-700 border-l-2 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#C9C9C9] dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-secondary borderborder-secondary text-gray-500 text-sm rounded-r-lg border-l-gray-800 dark:border-l-gray-700 border-l-2 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#C9C9C9] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       >
                         <option selected>Choose a state</option>
                         <option value="CA">California</option>
@@ -536,7 +536,7 @@ const Account = () => {
                     ></textarea>
                   </div>
                 </div>
-                <button className="p-2 px-5 ms-auto mb-2 flex text-[#C9C9C9] font-semibold hover:bg-[#2caab3] duration-150 bg-[#00BAC7] rounded-full">
+                <button className="p-2 px-5 ms-auto mb-2 flex text-secondary font-semibold hover:bg-[##E039FD] duration-150 bg-[#E039FD] rounded-full">
                   Save changes
                 </button>
               </div>
@@ -574,7 +574,7 @@ const Account = () => {
                     </div>
                   </div>
                 </div>
-                <button className="p-2 px-5 ms-auto mb-2 flex text-[#C9C9C9] font-semibold hover:bg-[#2caab3] duration-150 bg-[#00BAC7] rounded-full">
+                <button className="p-2 px-5 ms-auto mb-2 flex text-secondary font-semibold hover:bg-[##E039FD] duration-150 bg-[#E039FD] rounded-full">
                   Save changes
                 </button>
               </div>
@@ -620,8 +620,8 @@ const Account = () => {
                         />
                       </div>
                       <div className="mt-2">
-                        <div className="bg-slate-200 h-2 rounded mb-5 w-[49%]"></div>
-                        <div className=" p-8 rounded-xl bg-slate-100 w-full lg:w-3/5">
+                        <div className="bg-secondary h-2 rounded mb-5 w-[49%]"></div>
+                        <div className=" p-8 rounded-xl bg-secondary w-full lg:w-3/5">
                           <p className="font-semibold mb-3">
                             Password requirements:
                           </p>
@@ -641,7 +641,7 @@ const Account = () => {
                     </div>
                   </div>
                 </div>
-                <button className="p-2 px-5 ms-auto mb-2 flex text-[#C9C9C9] font-semibold hover:bg-[#2caab3] duration-150 bg-[#00BAC7] rounded-full">
+                <button className="p-2 px-5 ms-auto mb-2 flex text-secondary font-semibold hover:bg-[##E039FD] duration-150 bg-[#E039FD] rounded-full">
                   Save changes
                 </button>
               </div>
@@ -668,7 +668,7 @@ const Account = () => {
                     <div className="flex items-center">
                       <label class="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" value="" class="sr-only peer" />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#00BAC7]"></div>
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>{" "}
                     </div>
@@ -682,7 +682,7 @@ const Account = () => {
                       </p>
                     </div>
                     <div className="flex items-center">
-                      <button className="p-1 px-4 text-sm text-[#4dbfdf] bg-[#d5f4ff] rounded-full">
+                      <button className="p-1 px-4 text-sm text-secondary bg-[#E039FD] rounded-full">
                         View
                       </button>
                     </div>
@@ -697,13 +697,13 @@ const Account = () => {
                       </p>
                     </div>
                     <div className="flex items-center">
-                      <button className="p-1 px-4 text-sm text-[#6EC6DE] bg-[#d5f4ff] rounded-full">
+                      <button className="p-1 px-4 text-sm text-secondary bg-[#E039FD] rounded-full">
                         View
                       </button>
                     </div>
                   </div>
                 </div>
-                <button className="p-2 mt-3 px-5 ms-auto mb-2 flex text-[#C9C9C9] font-semibold hover:bg-[#2caab3] duration-150 bg-[#00BAC7] rounded-full">
+                <button className="p-2 mt-3 px-5 ms-auto mb-2 flex text-secondary font-semibold hover:bg-[##E039FD] duration-150 bg-[#E039FD] rounded-full">
                   Save changes
                 </button>
               </div>
@@ -765,7 +765,7 @@ const Account = () => {
                     </div>
                   </div>
                 </div>
-                <button className="p-2 mt-1 px-5 ms-auto mb-2 flex text-[#C9C9C9] font-semibold hover:bg-[#2caab3] duration-150 bg-[#00BAC7] rounded-full">
+                <button className="p-2 mt-1 px-5 ms-auto mb-2 flex text-secondary font-semibold hover:bg-[##E039FD] duration-150 bg-[#E039FD] rounded-full">
                   Save changes
                 </button>
               </div>
@@ -782,7 +782,7 @@ const Account = () => {
                   In this setcion you will be able to configure the behaviour of
                   notifications in Dashly
                 </div>
-                <div className="p-4 flex bg-slate-200  text-slate-400 rounded justify-between">
+                <div className="p-4 flex bg-secondary  text-slate-400 rounded justify-between">
                   <p className="font-semibold text-sm flex   items-center">
                     TYPE
                   </p>
@@ -817,21 +817,21 @@ const Account = () => {
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                       <input
                         checked
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                       <input
                         checked
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                     </div>
                   </div>
@@ -851,19 +851,19 @@ const Account = () => {
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                       <input
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                       <input
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                     </div>
                   </div>
@@ -884,21 +884,21 @@ const Account = () => {
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                       <input
                         checked
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                       <input
                         checked
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                     </div>
                   </div>
@@ -919,21 +919,21 @@ const Account = () => {
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                       <input
                         checked
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                       <input
                         checked
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                     </div>
                   </div>
@@ -951,27 +951,27 @@ const Account = () => {
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                       <input
                         checked
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                       <input
                         id="red-checkbox"
                         type="checkbox"
                         value=""
-                        class="w-4 h-4 appearance-none checked:bg-[#2caab3] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[#2caab3] dark:focus:ring-[#2caab3] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="w-4 h-4 appearance-none checked:bg-[#E039FD] text-[#C9C9C9] checked:text-[#C9C9C9] bg-gray-100border-secondary rounded  focus:ring-[##E039FD] dark:focus:ring-[##E039FD] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       ></input>
                     </div>
                   </div>
                   <hr className="my-6" />
                 </div>
                 <div action="flex">{/* box  */}</div>
-                <button className="p-2 mt-1 px-5 ms-auto mb-2 flex text-[#C9C9C9] font-semibold hover:bg-[#2caab3] duration-150 bg-[#00BAC7] rounded-full">
+                <button className="p-2 mt-1 px-5 ms-auto mb-2 flex text-secondary font-semibold hover:bg-[##E039FD] duration-150 bg-[#E039FD] rounded-full">
                   Save changes
                 </button>
               </div>
@@ -1010,7 +1010,7 @@ const Account = () => {
                           value=""
                           class="sr-only peer"
                         />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#00BAC7]"></div>
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>
                     </div>
@@ -1040,7 +1040,7 @@ const Account = () => {
                           value=""
                           class="sr-only peer"
                         />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#00BAC7]"></div>
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>
                     </div>
@@ -1066,7 +1066,7 @@ const Account = () => {
                     <div className="flex items-center">
                       <label class="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" value="" class="sr-only peer" />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#00BAC7]"></div>
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>
                     </div>
@@ -1092,7 +1092,7 @@ const Account = () => {
                     <div className="flex items-center">
                       <label class="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" value="" class="sr-only peer" />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#00BAC7]"></div>
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>
                     </div>
@@ -1117,7 +1117,7 @@ const Account = () => {
                     <div className="flex items-center">
                       <label class="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" value="" class="sr-only peer" />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#00BAC7]"></div>
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>
                     </div>
@@ -1144,13 +1144,13 @@ const Account = () => {
                     <div className="flex items-center">
                       <label class="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" value="" class="sr-only peer" />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#00BAC7]"></div>
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>
                     </div>
                   </div>
                 </div>
-                <button className="p-2 mt-3 px-5 ms-auto mb-2 flex text-[#C9C9C9] font-semibold hover:bg-[#2caab3] duration-150 bg-[#00BAC7] rounded-full">
+                <button className="p-2 mt-3 px-5 ms-auto mb-2 flex text-secondary font-semibold hover:bg-[##E039FD] duration-150 bg-[#E039FD] rounded-full">
                   Save changes
                 </button>
               </div>
@@ -1177,7 +1177,7 @@ const Account = () => {
                   account
                 </div>
                 <div action="flex">{/* box  */}</div>
-                <button className="p-2 mt-5 px-5 ms-auto mb-2 flex text-[#C9C9C9] font-semibold hover:bg-red-600 duration-150 bg-red-500 rounded-full">
+                <button className="p-2 mt-5 px-5 ms-auto mb-2 flex text-secondary font-semibold hover:bg-red-600 duration-150 bg-red-500 rounded-full">
                   Delete account{" "}
                 </button>
               </div>
