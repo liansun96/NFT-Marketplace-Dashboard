@@ -1,0 +1,7 @@
+.category-bg{
+    background: linear-gradient(90deg, #312B51 17.88%, rgba(30, 32, 58, 0.86) 99.37%);
+  }
+
+.cartgory-shadow{
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(182, 182, 182, 0.05) 0px 1px 1px 0px;
+}

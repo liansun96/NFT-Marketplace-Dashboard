@@ -14,31 +14,31 @@ const Table = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between gap-5 p-5 w-[49%] bg-gray-800 rounded-xl">
+    <div className="flex flex-col items-center justify-between gap-5 p-5 xl:w-[48%] 2xl:w-[49%] bg-secondary rounded-xl">
       <div className="flex items-center justify-between w-full">
         <div>
-          <h5 className="text-xl font-semibold text-white">Activity</h5>
+          <h5 className="text-xl font-semibold text-heading_text">Activity</h5>
         </div>
         <div className="flex items-center gap-3">
           <button
-            className={`text-white text-sm px-3 py-1 rounded-3xl ${
-              activeButton === "today" ? "bg-purple-800" : "bg-transparent"
+            className={`text-heading_text text-sm px-3 py-1 rounded-3xl ${
+              activeButton === "today" ? "bg-purple" : "bg-transparent"
             }`}
             onClick={() => handleButtonClick("today")}
           >
             Today
           </button>
           <button
-            className={`text-white text-sm px-3 py-1 rounded-3xl ${
-              activeButton === "7day" ? "bg-purple-800" : "bg-transparent"
+            className={`text-heading_text text-sm px-3 py-1 rounded-3xl ${
+              activeButton === "7day" ? "bg-purple" : "bg-transparent"
             }`}
             onClick={() => handleButtonClick("7day")}
           >
             7 Day
           </button>
           <button
-            className={`text-white text-sm px-3 py-1 rounded-3xl ${
-              activeButton === "30day" ? "bg-purple-800" : "bg-transparent"
+            className={`text-heading_text text-sm px-3 py-1 rounded-3xl ${
+              activeButton === "30day" ? "bg-purple" : "bg-transparent"
             }`}
             onClick={() => handleButtonClick("30day")}
           >
@@ -65,15 +65,15 @@ const Table = () => {
                     <div className="">
                       <img src={activity.image} className="h-[20px]" alt="" />
                     </div>
-                    <p className="text-white text-sm font-semibold">
+                    <p className="text-heading_text text-sm font-semibold">
                       {activity.name}
                     </p>
                   </div>
                 </td>
-                <td className="px-5 h-[58px] border-b border-t border-gray-700 text-white text-sm font-semibold">
+                <td className="px-5 h-[58px] border-b border-t border-gray-700 text-heading_text text-sm font-semibold">
                   {activity.price}
                 </td>
-                <td className="px-5 h-[58px] border-b border-t border-gray-700 text-white text-sm">
+                <td className="px-5 h-[58px] border-b border-t border-gray-700 text-heading_text text-sm">
                   <div className="flex items-center gap-1">
                     <div>
                       {activity.dis === "Sales" && <AiOutlineShoppingCart />}
@@ -83,7 +83,7 @@ const Table = () => {
                     {activity.dis}
                   </div>
                 </td>
-                <td className="px-5 h-[58px] border-b border-t border-e border-gray-700 text-white text-sm">
+                <td className="px-5 h-[58px] border-b border-t border-e border-gray-700 text-heading_text text-sm">
                   <div className="flex items-center">
                     <AiOutlineClockCircle />
                     {activity.time}

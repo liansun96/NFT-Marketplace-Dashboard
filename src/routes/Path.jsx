@@ -9,6 +9,7 @@ import Wallet from "../pages/Wallet";
 import Charts from "../components/Charts/Charts";
 import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
+import Charts from "../pages/Charts";
 
 const Path = () => {
   return (
@@ -16,7 +17,7 @@ const Path = () => {
       <Route path="/sign-up" element={<SignUp/>}/>
       <Route path="/sign-in" element={<SignIn/>}/>
       <Route path="/" element={<Dashboard />}>
-        <Route path="/charts" element={<Charts/>}/>
+        <Route path="/charts" element={<Charts />} />
         <Route path="/bids-list" element={<BidsList />} />
         <Route path="/create-new-bid" element={<CreateNewBid />} />
         <Route path="/collection-list" element={<CollectionList />} />

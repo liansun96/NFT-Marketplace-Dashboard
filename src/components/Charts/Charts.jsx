@@ -9,7 +9,7 @@ import TrendingActions from "./TrendingActions";
 
 const Charts = () => {
   return (
-    <div className="w-[84%] bg-secondary">
+    <div className="bg-secondary">
       <Navbar />
       <div className="flex flex-col items-center justify-between gap-5 p-5">
         <section className="flex items-center justify-between gap-5 w-full">
