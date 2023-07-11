@@ -6,10 +6,9 @@ import CreateNewBid from "../components/liveBids/CreateNewBid";
 import CollectionList from "../components/collection/CollectionList";
 import CreateNewCollection from "../components/collection/CreateNewCollection";
 import Wallet from "../pages/Wallet";
-import Charts from "../components/Charts/Charts";
 import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
-import Charts from "../pages/Charts";
+import Charts from "../pages/Chart";
 
 const Path = () => {
   return (
