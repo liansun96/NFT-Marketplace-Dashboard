@@ -6,9 +6,12 @@ import CreateNewBid from "../components/liveBids/CreateNewBid";
 import CollectionList from "../components/collection/CollectionList";
 import CreateNewCollection from "../components/collection/CreateNewCollection";
 import Wallet from "../pages/Wallet";
+import Charts from "../pages/Charts";
+import Account from "../components/account/Account";
 import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
 import Chart from "../pages/Chart";
+
 
 const Path = () => {
   return (
@@ -25,6 +28,7 @@ const Path = () => {
           element={<CreateNewCollection />}
         />
         <Route path="/wallet" element={<Wallet />} />
+        <Route path="/account" element={<Account />} />
       </Route>
     </Routes>
   );
