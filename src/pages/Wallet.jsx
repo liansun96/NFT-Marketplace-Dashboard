@@ -11,8 +11,8 @@ export default function Wallet() {
       {/* https://gigaland.io/images/background/19.jpg
       https://gigaland.io/images/background/8.jpg */}
       <Navbar/>
-        <section className='flex bg-[#070B24] gap-5 px-5 h-full'>
-            <div className='basis-2/3 mt-5'>
+        <section className='lg:flex bg-[#070B24] gap-5 px-5 h-full'>
+            <div className='basis-1 lg:basis-2/3 pt-5'>
                 <YourBalance/>
                 <LatestTransaction/>
             </div>

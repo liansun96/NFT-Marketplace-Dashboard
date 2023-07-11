@@ -8,15 +8,15 @@ const Profile = () => {
   const {showStatus, toggleStatus} = stateContextCustom()
   return (
     <div
-      className={`shadow-lg flex flex-col mt-3 justify-center w-60 rounded-lg bg-white`}
+      className={`shadow-lg flex flex-col mt-3 justify-center w-60 rounded-lg bg-transparent backdrop-blur-3xl`}
     >
       <div className="flex gap-2 items-center border-b p-4">
         <img
           className="w-[40px] h-[40px] rounded-full"
-          src="https://d33wubrfki0l68.cloudfront.net/053f2dfd0df2f52c41e903a21d177b0b44abc9b1/1282c/assets/images/profiles/profile-06.jpeg"
+          src="http://funto.designing-world.com/img/bg-img/u2.jpg"
           alt=""
         />
-        <div className="text-sm">
+        <div className="text-sm text-white">
           <h4 className="font-bold">Ellie Tucker</h4>
           <p>ellie.tucker@dashly.com</p>
         </div>

@@ -9,7 +9,8 @@ import TrendingActions from "../components/Charts/TrendingActions";
 import Authors from "../components/Charts/Authors";
 import TopBuyers from "../components/Charts/TopBuyers";
 
-const Charts = () => {
+const Chart
+ = () => {
   return (
     <div className="bg-primary flex flex-col">
       <div className=" w-full 3xl:w-[80%] 4xl:[60%] mx-auto">
@@ -40,4 +41,5 @@ const Charts = () => {
   );
 };
 
-export default Charts;
+export default Chart
+;

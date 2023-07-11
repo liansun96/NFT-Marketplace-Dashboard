@@ -19,7 +19,7 @@ const Chart = () => {
       {
         barThickness: 7,
         backgroundColor: "#f6f7f8",
-        hoverBackgroundColor: "#00C5D9",
+        hoverBackgroundColor: "#E039FD",
         borderRadius: 10,
         
         label: "$",
@@ -28,7 +28,7 @@ const Chart = () => {
       {
         barThickness: 7,
         backgroundColor: "red",
-        hoverBackgroundColor: "#00C5D9",
+        hoverBackgroundColor: "#E039FD",
         borderRadius: 10,
         label: "$",
         data: [5015, 5455, 2987, 3455, 1198, 5987, 9076],
@@ -39,6 +39,7 @@ const Chart = () => {
 
   const options = {
     maintainAspectRatio: false,
+    responsive: true,
     plugins: {
       legend: false,
       label: null,
