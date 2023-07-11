@@ -6,11 +6,16 @@ import CreateNewBid from "../components/liveBids/CreateNewBid";
 import CollectionList from "../components/collection/CollectionList";
 import CreateNewCollection from "../components/collection/CreateNewCollection";
 import Wallet from "../pages/Wallet";
+import Charts from "../components/Charts/Charts";
+import SignUp from "../pages/SignUp";
+import SignIn from "../pages/SignIn";
 import Charts from "../pages/Charts";
 
 const Path = () => {
   return (
     <Routes>
+      <Route path="/sign-up" element={<SignUp/>}/>
+      <Route path="/sign-in" element={<SignIn/>}/>
       <Route path="/" element={<Dashboard />}>
         <Route path="/charts" element={<Charts />} />
         <Route path="/bids-list" element={<BidsList />} />
