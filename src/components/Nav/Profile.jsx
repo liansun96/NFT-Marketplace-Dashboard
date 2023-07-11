@@ -8,7 +8,7 @@ const Profile = () => {
   const {showStatus, toggleStatus} = stateContextCustom()
   return (
     <div
-      className={`shadow-lg flex flex-col mt-3 justify-center w-60 rounded-lg bg-transparent backdrop-blur-lg`}
+      className={`shadow-lg flex flex-col mt-3 justify-center w-60 rounded-lg bg-transparent backdrop-blur-3xl`}
     >
       <div className="flex gap-2 items-center border-b p-4">
         <img

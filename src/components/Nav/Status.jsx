@@ -3,7 +3,7 @@ import React from 'react'
 const Status = () => {
   return (
     <div
-    className={`shadow-lg flex flex-col mt-3 justify-center w-40 rounded-lg bg-white`}
+    className={`shadow-lg flex flex-col mt-3 justify-center w-40 rounded-lg bg-transparent backdrop-blur-3xl`}
   >
     <div className='flex flex-col p-2 border-b text-sm'>
     <button className="nav-dropdown">

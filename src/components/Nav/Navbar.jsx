@@ -6,8 +6,7 @@ import { stateContextCustom } from "../../context/StateContext";
 import uk from "../../assets/icons8-great-britain-96.png";
 import Theme from "./Theme";
 import Languages from "./Languages";
-import NotiSidebar from "./NotiSidebar";
-import SettingSidebar from "./SettingSidebar";
+import Notification from "./Notification";
 import Profile from "./Profile";
 
 const Navbar = () => {
@@ -25,7 +24,7 @@ const Navbar = () => {
     showProfile,
     toggleProfile,
   } = stateContextCustom();
-  console.log(image)
+  console.log(image);
   const closeSideBars = () => {
     showNoti && toggleNoti();
     showSetting && toggleSetting();
@@ -34,15 +33,15 @@ const Navbar = () => {
 
   return (
     <>
-      <main className="flex relative w-full items-center justify-center md:justify-between md:p-10 p-5 bg-[#1C1832]">
+      <main className="flex relative w-full items-center justify-center md:justify-between md:px-10 p-5 bg-[#1C1832]">
         <div className="hidden relative w-[287.5px] md:flex items-center shadow rounded-md">
           <input
             type="text"
-            className="bg-[#131129] border border-dashed border-slate-600 text-sm w-full outline-none rounded-md py-3 px-4"
+            className="bg-[#131129] text-white border border-dashed border-slate-600 text-sm w-full outline-none rounded-full py-2.5 px-4"
             placeholder="Search..."
           />
           <button className=" p-2 text-white rounded-lg absolute right-1">
-            <BiSearch className="" />
+            <BiSearch className="text-gray-400" />
           </button>
         </div>
         <div className="flex">
@@ -53,7 +52,9 @@ const Navbar = () => {
             </button>
             <div
               onClick={() => setShow(false)}
-              className={`${!show ? "scale-y-0" : "scale-y-1"} transform transition origin-top duration-200 absolute right-0 z-10`}
+              className={`${
+                !show ? "scale-y-0" : "scale-y-1"
+              } transform transition origin-top duration-200 absolute right-0 z-10`}
             >
               <Theme />
             </div>
@@ -75,7 +76,7 @@ const Navbar = () => {
           <div
             onClick={closeSideBars}
             className={
-              showNoti || showSetting || showProfile 
+              showNoti || showSetting || showProfile
                 ? "w-full h-screen ml-[110px] fixed top-0 right-0 bg-transparent z-10"
                 : null
             }
@@ -86,16 +87,16 @@ const Navbar = () => {
               <button onClick={toggleNoti} className="nav-btn">
                 <PiBell />
                 <span className="text-xs bg-gradient-to-r from-[#df2cff] to-[#6345ed] rounded-full text-white px-1.5 absolute -top-2 -right-3 z-10">
-                  20+
+                  9+
                 </span>
               </button>
-            </div>
-            <div
-              className={`${
-                !showNoti ? "translate-x-[400px]" : "translate-x-0"
-              } shadow-lg transition-all ease-linear duration-200 w-[400px] fixed right-0 top-0  h-screen bg-white z-10 overflow-y-scroll `}
-            >
-              <NotiSidebar />
+              <div
+                className={`${
+                  !showNoti ? "scale-y-0" : "scale-y-1"
+                } transform transition origin-top duration-200 absolute right-0 z-10`}
+              >
+                <Notification />
+              </div>
             </div>
           </div>
           {/* Profile */}

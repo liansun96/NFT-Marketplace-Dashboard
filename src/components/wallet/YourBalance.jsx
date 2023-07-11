@@ -8,8 +8,8 @@ import CountUp from "react-countup";
 
 export default function YourBalance() {
   return (
-      <main className={`bg-[#1D1933] rounded-lg p-5 h-80 flex justify-between flex-col`}>
-        <div className="flex">
+      <main className={`bg-[#1D1933] w-full rounded-lg p-5 h- flex justify-between flex-col`}>
+        <div className="flex flex-wrap lg:flex-nowrap">
           <div className="basis-2/5">
             <div className="mb-10">
               <h2 className={"text-xl text-white font-bold"}>Your Balance</h2>
@@ -26,11 +26,11 @@ export default function YourBalance() {
               </p>
             </div>
           </div>
-          <div className="basis-3/5">
+          <div className="basis-3/5 mx-auto">
             <Chart/>
           </div>
         </div>
-        <footer className={`flex justify-between`}>
+        <footer className={`flex justify-between mt-5`}>
           <div className={`flex items-center gap-2`}>
             <div className={` rounded-md p-1`}>
               <SlWallet className={`text-3xl text-[#fff]`}/>

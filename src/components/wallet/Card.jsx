@@ -27,7 +27,7 @@ export default function Card() {
             </div>
             <div >
                 <p>CARD HOLDER</p>
-                <p>Admin name</p>
+                <p>Mazanov Sky</p>
             </div>
         </div>
       </div>

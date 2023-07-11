@@ -6,7 +6,7 @@ import { TbSunMoon } from "react-icons/tb";
 const Theme = () => {
   return (
     <div
-      className={`shadow-lg flex flex-col mt-3 justify-center py-2 w-40 rounded-lg bg-transparent backdrop-blur-md`}
+      className={`shadow-lg flex flex-col mt-3 justify-center py-2 w-40 rounded-lg bg-transparent backdrop-blur-3xl `}
     >
       <button className="nav-dropdown">
         <PiSun /> Light mode
