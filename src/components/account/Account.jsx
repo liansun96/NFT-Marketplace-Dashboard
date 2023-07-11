@@ -1184,7 +1184,7 @@ const Account = () => {
             </div>
           </div>
         </div>
-        <div className="text-slate-400 flex w-full p-5 my-5">
+        <div className="text-slate-400 flex w-full p-5 mt-5">
           © Dashly. 2023 Webinning.{" "}
         </div>
 

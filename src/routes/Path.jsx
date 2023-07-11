@@ -6,7 +6,7 @@ import CreateNewBid from "../components/liveBids/CreateNewBid";
 import CollectionList from "../components/collection/CollectionList";
 import CreateNewCollection from "../components/collection/CreateNewCollection";
 import Wallet from "../pages/Wallet";
-import Charts from "../pages/Charts";
+import Charts from "../pages/Chart";
 import Account from "../components/account/Account";
 import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
