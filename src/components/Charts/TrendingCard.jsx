@@ -7,7 +7,7 @@ const TrendingCard = ({ aution }) => {
     <div key={aution.id} className="group">
       <div className="flex flex-col gap-4 bg-info p-5 rounded-xl group-hover:-translate-y-1 duration-300">
         <div className="relative">
-          <div className="w-[200px] overflow-hidden rounded-lg duration-300">
+          <div className="overflow-hidden rounded-lg duration-300">
             <img
               src={aution.image}
               alt=""

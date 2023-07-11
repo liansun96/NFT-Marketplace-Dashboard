@@ -29,16 +29,11 @@ const Sidebar = () => {
     <div className="h-screen overflow-y-scroll bg-primary text-body_text sticky top-0 left-0 custom-dark-shadow">
       <div className="flex justify-between px-4 py-6">
         <img
-          src="http://funto.designing-world.com/img/bg-img/u2.jpg"
-          className="w-14 h-14 2xl:w-16 2xl:h-16 rounded-xl"
+          src="https://themebeyond.com/html/nftmak/assets/img/logo/naftmak.svg"
+          className="mx-auto scale-125 my-2"
           alt=""
         />
-        <div className="h-14 2xl:h-16">
-          <p className="text-base font-semibold">Mazanov Sky</p>
-          <p className="text-xs bg-purple text-center text-white font-light px-3 py-[1px] rounded inline-block mt- 2xl:mt-5">
-            Premium user
-          </p>
-        </div>
+        
       </div>
       <div className="px-4 py-6">
         <div className="bg-secondary custom-light-shadow p-5 rounded-xl">
@@ -66,7 +61,7 @@ const Sidebar = () => {
         <li className="w-full">
           <NavLink
             className={`flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d]  py-4 px-4 rounded-full`}
-            to={"/charts"}
+            to={"/chart"}
           >
             <div className="flex gap-3 2xl:gap-4 w-full">
               <BsSpeedometer className="text-xl" />

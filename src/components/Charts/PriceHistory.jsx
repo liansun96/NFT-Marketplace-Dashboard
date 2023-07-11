@@ -110,7 +110,7 @@ const PriceHistory = () => {
 
   return (
     <div className="w-[75%]">
-      <div className="flex flex-col justify-between gap-5 p-5 bg-secondary rounded-xl w-full">
+      <div className="flex flex-col justify-between gap-5 p-5 category-bg rounded-xl w-full">
         <div className="flex items-center gap-2">
           <div className="">
             <img
