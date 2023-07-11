@@ -7,6 +7,7 @@ import CollectionList from "../components/collection/CollectionList";
 import CreateNewCollection from "../components/collection/CreateNewCollection";
 import Wallet from "../pages/Wallet";
 import Charts from "../pages/Charts";
+import Account from "../components/account/Account";
 
 const Path = () => {
   return (
@@ -21,6 +22,7 @@ const Path = () => {
           element={<CreateNewCollection />}
         />
         <Route path="/wallet" element={<Wallet />} />
+        <Route path="/account" element={<Account />} />
       </Route>
     </Routes>
   );
