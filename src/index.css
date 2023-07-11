@@ -8,6 +8,7 @@
   padding: 0;
 }
 
+
 .nav .at{
     border-left:2px solid #00BAC7;
     color: #00BAC7;
@@ -31,3 +32,6 @@
     @apply text-white bg-black
 }
 
+.category-bg{
+    background: linear-gradient(90deg, #312B51 17.88%, rgba(30, 32, 58, 0.86) 99.37%);
+  }
