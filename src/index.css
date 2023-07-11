@@ -17,8 +17,8 @@
 
 
 .nav .at{
-    border-left:2px solid #00BAC7;
-    color: #00BAC7;
+    border-left:2px solid #E039FD;
+    color: #E039FD;
 }
 .nav-btn{
     @apply w-[40px] h-[40px] text-xl text-white bg-[#131129] rounded-full shadow flex items-center justify-center
