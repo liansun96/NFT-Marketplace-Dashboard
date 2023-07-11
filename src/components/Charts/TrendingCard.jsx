@@ -5,7 +5,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 const TrendingCard = ({ aution }) => {
   return (
     <div key={aution.id} className="group">
-      <div className="flex flex-col gap-4 bg-info p-5 rounded-xl group-hover:-translate-y-1 duration-300">
+      <div className="flex flex-col gap-4 bg-primary p-5 rounded-xl group-hover:-translate-y-1 duration-300">
         <div className="relative">
           <div className="overflow-hidden rounded-lg duration-300">
             <img
