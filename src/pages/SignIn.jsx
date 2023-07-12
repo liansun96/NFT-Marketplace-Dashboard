@@ -30,7 +30,7 @@ export default function SignIn() {
   if (isLoading) {
     return (
       <div className="w-full h-screen bg-[#070B24] flex justify-center items-center">
-        <SequenceSpinner size={40} backColor="#BA3CD3" />
+        <SequenceSpinner size={50} backColor="#BA3CD3" />
       </div>
     );
   }
@@ -98,7 +98,7 @@ export default function SignIn() {
                       />
                       <div
                         onClick={toggleShowPass}
-                        className="absolute right-5 text-slate-300 bottom-3"
+                        className="absolute right-5 text-slate-300 cursor-pointer bottom-3"
                       >
                         {!showPass ? <LiaEye /> : <LiaEyeSlash />}
                       </div>

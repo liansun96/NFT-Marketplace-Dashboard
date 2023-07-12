@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 .auth-bg{
-    background-image: url("https://themebeyond.com/html/nftmak/assets/img/banner/banner_bg.jpg");
+    background-image: url("./assets/banner-bg.jpg");
     background-size: cover;
-    background-position: top;
+    background-position: left;
     background-repeat: no-repeat;
 }
 
@@ -24,14 +24,12 @@
     @apply w-[40px] h-[40px] text-xl text-white bg-[#131129] rounded-full shadow flex items-center justify-center
 }
 .nav-dropdown{
-    @apply  flex items-center px-3 py-2 gap-3 cursor-pointer select-none text-white text-sm
+    @apply  flex items-center px-3 py-2 gap-3 cursor-pointer select-none text-white
 }
 .nav-dropdown:hover {
-    @apply bg-gradient-to-r from-[#df2cff] to-[#6345ed] bg-clip-text text-transparent
+    @apply text-purple
 }
-/* .selected{
-    @apply text-white bg-gradient-to-r from-[#df2cff] to-[#6345ed] !important
-} */
+
 .navigation {
     color: #00BAC7;
 }
