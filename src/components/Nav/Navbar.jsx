@@ -33,6 +33,7 @@ const Navbar = () => {
   return (
     <>
       <main className="bg-[#070b24ec] bg- flex relative w-full items-center justify-center md:justify-between md:px-10 p-5 shadow-lg">
+
         <div className="hidden relative w-[287.5px] md:flex items-center shadow rounded-md">
           <input
             type="text"

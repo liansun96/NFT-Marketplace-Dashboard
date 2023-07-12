@@ -43,6 +43,7 @@ const Profile = () => {
         <Link to={"/account"}>
           <button className="nav-dropdown">Settings</button>
         </Link>
+
       </div>
       <div className="p-2">
         <Link to={"/sign-in"}>
