@@ -11,6 +11,8 @@ import {
   BiLogoTwitter,
   BiLogoLinkedin,
 } from "react-icons/bi";
+import Swal from "sweetalert2";
+
 
 export default function SignIn() {
   const { showPass, toggleShowPass } = stateContextCustom();
@@ -19,12 +21,26 @@ export default function SignIn() {
   const [isLoading, setIsLoading] = useState(false);
   const nav = useNavigate();
 
-  const handleSignIn = () => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-      nav("/");
-    }, 2000);
+  const handleSignIn = (e) => {
+    e.preventDefault()
+    if (email === "mazanovsky@nft.com" && password === "password") {
+      setIsLoading(true);
+      setTimeout(() => {
+        setIsLoading(false);
+        nav("/")
+      }, 2000);
+    } else {
+      Swal.fire({
+        // icon: 'error',
+        // title: 'Oops...',
+        confirmButtonColor: "#B73DF8",
+        confirmButtonText: "Try again!",
+        background: "#050409",
+        color: "#FFF",
+        text: 'Email or password went wrong!',
+        footer: '<a href="">Forgot password?</a>'
+      })
+    }
   };
 
   if (isLoading) {
