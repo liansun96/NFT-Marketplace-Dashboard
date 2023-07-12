@@ -31,7 +31,9 @@ const Profile = () => {
           <Status />
           </div>
         </div>
+        <Link to={"/account"}>
         <button className="nav-dropdown">Profile & account</button>
+        </Link>
         <button className="nav-dropdown">Settings</button>
       </div>
       <div className="p-2">

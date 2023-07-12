@@ -62,7 +62,7 @@ const Account = () => {
                 <div className="w-[110px] h-[110px] rounded-full overflow-hidden">
                   <img
                     className=""
-                    src="https://d33wubrfki0l68.cloudfront.net/053f2dfd0df2f52c41e903a21d177b0b44abc9b1/1282c/assets/images/profiles/profile-06.jpeg"
+                    src="http://funto.designing-world.com/img/bg-img/u2.jpg"
                     alt=""
                   />
                 </div>
@@ -70,8 +70,8 @@ const Account = () => {
                   <PiPencilDuotone />
                 </span>
               </div>
-              <h1 className="font-bold text-[#C9C9C9] text-xl">Ellie Tucker</h1>
-              <p className="text-slate-500">Assistant Manager</p>
+              <h1 className="font-bold text-[#C9C9C9] text-xl">Mazanov Sky</h1>
+              <p className="text-slate-500">mazanovsky@nft.com</p>
             </div>
             {/* list  */}
             <hr className="w-4/5 mx-auto my-5" />
@@ -127,7 +127,7 @@ const Account = () => {
                       type="email"
                       id="email"
                       class="bg-secondary border lg:w-4/5 border-secondary text-gray-500 text-sm rounded-lg focus:ring-[#00BAC7] focus:border-[#00BAC7] block w-full p-2.5"
-                      defaultValue={"hello"}
+                      defaultValue={"Mazanov Sky"}
                     />
                   </div>
                   <div className="flex flex-col my-6 lg:justify-between lg:flex-row">
@@ -149,7 +149,7 @@ const Account = () => {
                       type="email"
                       id="email"
                       class="bg-secondary border lg:w-4/5 border-secondary text-gray-500 text-sm rounded-lg focus:ring-[#00BAC7] focus:border-[#00BAC7] block w-full p-2.5"
-                      defaultValue={"ellie.tucker@dashly.com"}
+                      defaultValue={"mazanovsky@nft.com"}
                     />
                   </div>
                   <div className="flex flex-col my-6 lg:justify-between lg:flex-row">
