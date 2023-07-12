@@ -36,7 +36,7 @@ export default function SignUp() {
           <div className="lg:basis-1/3 bg-transparent lg:backdrop-blur-3xl rounded-xl mx-auto px-5 lg:px-[58px] animate__animated animate__flipInY">
             <div className="lg:my-10 mb-5 text-center w-80">
               <h2 className="text-2xl text-slate-300 font-bold mb-2">
-                Create your Account
+                Create Account
               </h2>
               <p className="text-slate-300 text-md">
               Create your account, it takes less than a minute

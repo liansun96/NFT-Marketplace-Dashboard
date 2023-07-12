@@ -18,13 +18,13 @@ const Profile = () => {
             src="http://funto.designing-world.com/img/bg-img/u2.jpg"
             alt=""
           />
-          <div className="text-sm text-white">
+          <div className=" text-white">
             <h4 className="font-bold">Mazanov Sky</h4>
-            <p>mazanovsky@nft.com</p>
+            <p className="text-sm">mazanovsky@nft.com</p>
           </div>
         </div>
       </Link>
-      <div className="flex flex-col p-2 border-b text-sm relative">
+      <div className="flex flex-col p-2 border-b relative">
         <div onClick={toggleStatus} className="nav-dropdown">
           <button className="flex items-center gap-3">
             Set status <TbMathGreater className="text-xs" />
@@ -47,7 +47,7 @@ const Profile = () => {
       </div>
       <div className="p-2">
         <Link to={"/sign-in"}>
-          <button className="nav-dropdown w-full text-sm">Sign out</button>
+          <button className="nav-dropdown w-full ">Sign out</button>
         </Link>
       </div>
     </div>

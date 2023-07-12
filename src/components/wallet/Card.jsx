@@ -1,4 +1,5 @@
 import React from "react";
+import cardBg from '../../assets/world-map-background.jpg'
 
 export default function Card() {
   return (
@@ -6,7 +7,7 @@ export default function Card() {
       <div
         className="w-full rounded-lg h-60 bg-card p-5 flex flex-col justify-between relative"
         style={{
-          backgroundImage: `url(${"https://www.psdgraphics.com/file/world-map-background.jpg"})`,
+          backgroundImage: `url(${cardBg})`,
           backgroundPosition: "center",
           backgroundSize: "contain",
         }}
