@@ -80,7 +80,7 @@ const Chart = () => {
 
   return (
     <div className="w-full">
-      <Bar data={data} options={options} width={400} height={200}></Bar>
+      <Bar data={data} options={options} width={400} height={250}></Bar>
     </div>
   );
 };

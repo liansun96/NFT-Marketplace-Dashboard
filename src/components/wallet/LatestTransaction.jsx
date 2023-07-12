@@ -10,7 +10,7 @@ export default function LatestTransaction() {
         <table className="w-full rounded-lg bg-[#1D1933] mb-5">
           <thead>
             <tr className="text-sm font-bold">
-              <td className="p-5">Item List</td>
+              <td className="p-7">Item List</td>
               <td className="">Type</td>
               <td className="">Amount</td>
               <td className="">Date & Time</td>
@@ -20,7 +20,7 @@ export default function LatestTransaction() {
             {transactionList.map((i) => {
               return (
                 <tr key={i.id} className="text-sm hover:bg-[#131129]">
-                  <td className="px-5 py-3">
+                  <td className="px-5 py-4">
                     <div className="flex items-center gap-3">
                       <img src={i.image} alt="" className="w-10 rounded-lg"/>
                       <div>

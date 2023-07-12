@@ -28,7 +28,7 @@ export default function QuickTransfer() {
           <BiSolidCheckCircle className="text-purple text-xl bg-white rounded-full" />
         </div>
         <div>
-          <h4 className="text-center my-5 text-sm">Insert Amount</h4>
+          <h4 className="text-center mt-12 text-sm">Insert Amount</h4>
           <h4 className="text-center my-5 text-3xl font-bold">{value}</h4>
 
           <input
@@ -40,11 +40,11 @@ export default function QuickTransfer() {
             className="w-full accent-[#E039FD]  bg-white h-1 rounded-full"
           />
 
-          <div className="flex items-center justify-between text-sm mb-5">
+          <div className="flex items-center justify-between text-sm">
             <p>Your balance</p>
             <p>$88,455.12</p>
           </div>
-          <div className="transform duration-1000 w-fit mx-auto transition text-center hover:bg-gradient-to-l bg-gradient-to-r from-[#bc3cd3] to-[#6345ed] p-1 rounded-full">
+          <div className="transform my-10 duration-1000 w-fit mx-auto transition text-center hover:bg-gradient-to-l bg-gradient-to-r from-[#bc3cd3] to-[#6345ed] p-1 rounded-full">
             <div className="border border-[#fff] border-dashed bg-transparent rounded-3xl">
               <button className="px-10 py-2 text-sm  font-bold text-heading_text">
                 TRANSFER NOW
