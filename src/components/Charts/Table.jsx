@@ -14,14 +14,14 @@ const Table = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between gap-5 p-5 xl:w-[48%] 2xl:w-[49%] category-bg rounded-xl">
+    <div className="flex flex-col items-center justify-between gap-5 p-5 w-full lg:w-[49%] 2xl:w-[49%] bg-secondary rounded-xl">
       <div className="flex items-center justify-between w-full">
         <div>
-          <h5 className="text-xl font-semibold text-heading_text">Activity</h5>
+          <h5 className="text-xm lg:text-xl font-semibold text-heading_text">Activity</h5>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center lg:gap-3">
           <button
-            className={`text-heading_text text-sm px-3 py-1 rounded-3xl ${
+            className={`text-heading_text text-xs lg:text-sm px-3 py-1 rounded-3xl ${
               activeButton === "today" ? "bg-purple" : "bg-transparent"
             }`}
             onClick={() => handleButtonClick("today")}
@@ -29,7 +29,7 @@ const Table = () => {
             Today
           </button>
           <button
-            className={`text-heading_text text-sm px-3 py-1 rounded-3xl ${
+            className={`text-heading_text text-xs lg:text-sm px-3 py-1 rounded-3xl ${
               activeButton === "7day" ? "bg-purple" : "bg-transparent"
             }`}
             onClick={() => handleButtonClick("7day")}
@@ -37,7 +37,7 @@ const Table = () => {
             7 Day
           </button>
           <button
-            className={`text-heading_text text-sm px-3 py-1 rounded-3xl ${
+            className={`text-heading_text text-xs lg:text-sm px-3 py-1 rounded-3xl ${
               activeButton === "30day" ? "bg-purple" : "bg-transparent"
             }`}
             onClick={() => handleButtonClick("30day")}

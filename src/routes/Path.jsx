@@ -10,6 +10,8 @@ import Account from "../components/account/Account";
 import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
 import Chart from "../pages/Chart";
+import Create from "../pages/Create";
+
 import ItemDetail from "../components/itemDetail/ItemDetail";
 import BidHistory from "../components/itemDetail/Nest/BidHistory";
 import Info from "../components/itemDetail/Nest/Info";
@@ -30,6 +32,7 @@ const Path = () => {
         </Route>
         <Route path="/create-new-bid" element={<CreateNewBid />} />
         <Route path="/collection-list" element={<CollectionList />} />
+        <Route path="/create" element={<Create />} />
         <Route
           path="/create-new-collection"
           element={<CreateNewCollection />}
