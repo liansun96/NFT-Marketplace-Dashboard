@@ -17,7 +17,7 @@ export default function SignUp() {
     stateContextCustom();
   return (
     <StyledEngineProvider injectFirst>
-      <main className="w-screen h-screen bg overflow-hidden">
+      <main className="w-screen h-screen auth-bg overflow-hidden">
         {/* logo */}
         <div className="flex lg:fixed gap-2 items-center p-10">
           <img

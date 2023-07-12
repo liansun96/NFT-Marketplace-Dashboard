@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { VscTriangleDown, VscTriangleUp } from "react-icons/vsc";
 import { activeBids } from "../../constants/livebids";
+import { useNavigate } from "react-router";
 
 const Table = () => {
   const [showName, setShowName] = useState(false);
@@ -15,6 +16,7 @@ const Table = () => {
 
   const [sortedData, setSortedData] = useState(activeBids);
   const [sortOrder, setSortOrder] = useState("asc");
+  const navigate = useNavigate();
 
   const sortByProperty = (property) => {
     const sortedData = [...activeBids].sort((a, b) => {
@@ -215,10 +217,13 @@ const Table = () => {
           </thead>
           <tbody>
             {currentItems.map((i, index) => {
+              const handleClick = () => {
+                navigate(`/item-detail/${i?.id}`);
+              };
               return (
-                <tr key={i.id}>
+                <tr className="cursor-pointer" onClick={handleClick} key={i.id}>
                   <td className="py-2 px-4">
-                    <div className="flex justify-center items-center">
+                    <div onClick={(e) => e.stopPropagation()} className="flex justify-center items-center">
                       <input
                         className="mx-auto"
                         type="checkbox"
@@ -229,7 +234,7 @@ const Table = () => {
                   </td>
                   <td className="ps-6 h-20 text-sm font-bold">
                     <div className="flex justify-start items-center gap-4">
-                      <img src={i.itemImage} className="w-[60px]" alt="" />
+                      <img src={i.itemImage} className="w-[60px] rounded" alt="" />
                       <p className="text-lg">{i.title}</p>
                     </div>
                   </td>
@@ -256,13 +261,13 @@ const Table = () => {
         <div className="text-sm text-gray-400">
           showing : {startIndex + 1} - {endIndex} of {sortedData.length}
         </div>
-        <div className="flex border rounded-2xl overflow-hidden">
+        <div className="flex border rounded-2xl overflow-hidden border-icon">
           {paginationLinks.map((pageNumber) => (
             <button
               key={pageNumber}
               onClick={() => handlePageChange(pageNumber)}
               className={`px-3 py-1 text-[#00C5D9] text-md ${
-                pageNumber === currentPage ? "bg-icon" : ""
+                pageNumber === currentPage ? "bg-purple text-body_text" : ""
               }`}
             >
               {pageNumber}

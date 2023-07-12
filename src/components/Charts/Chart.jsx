@@ -7,7 +7,7 @@ import Table from "./Table";
 import TopSeller from "./TopSeller";
 import TrendingActions from "./TrendingActions";
 
-const Charts = () => {
+const Chart = () => {
   return (
     <div className="bg-secondary">
       <Navbar />
@@ -31,4 +31,4 @@ const Charts = () => {
   );
 };
 
-export default Charts;
+export default Chart;

@@ -37,7 +37,7 @@ export default function SignIn() {
 
   return (
     <StyledEngineProvider injectFirst>
-      <main className="w-screen h-screen bg overflow-y-scroll overflow-hidden">
+      <main className="w-screen h-screen auth-bg overflow-y-scroll overflow-hidden">
         {/* logo */}
         <div className="flex lg:fixed gap-2 items-center p-10">
           <img
