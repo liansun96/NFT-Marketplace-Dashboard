@@ -30,9 +30,8 @@ const Path = () => {
           <Route path="info" element={<Info />} />
           <Route path="pro" element={<Provenance />} />
         </Route>
-        <Route path="/create-new-bid" element={<CreateNewBid />} />
         <Route path="/collection-list" element={<CollectionList />} />
-        <Route path="/create" element={<Create />} />
+        <Route path="/create-new-bid" element={<Create />} />
         <Route
           path="/create-new-collection"
           element={<CreateNewCollection />}
