@@ -14,7 +14,7 @@ const Table = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between gap-5 p-5 w-full lg:w-[49%] 2xl:w-[49%] 3xl:w-[49.3%] bg-secondary rounded-xl">
+    <div className="flex flex-col items-center justify-between gap-5 p-5 w-full lg:w-[49%] 2xl:w-[49%] 3xl:w-[49.3%] category-bg rounded-xl">
       <div className="flex items-center justify-between w-full">
         <div>
           <h5 className="text-xm lg:text-xl font-semibold text-heading_text">Activity</h5>

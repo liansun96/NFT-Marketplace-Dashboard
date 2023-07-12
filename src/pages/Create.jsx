@@ -4,6 +4,7 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import { BsBag } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
+import Navbar from "../components/Nav/Navbar";
 
 const Create = () => {
   //for radios
@@ -38,18 +39,21 @@ const Create = () => {
 
   return (
     <div className="bg-secondary h-full">
-      <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-10 w-[95%] mx-auto py-20">
+      <div className="sticky top-0 z-10">
+        <Navbar />
+      </div>
+      <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-10 w-[95%] mx-auto py-10">
         <div className="flex flex-col gap-5 p-10 rounded-xl border border-gray-700 category-bg w-[75%]">
-          <h1 className="text-body_text text-xl font-semibold">
+          <h1 className="text-heading_text text-2xl font-semibold">
             Create New NFT
           </h1>
           <form>
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-2 w-[30%]">
-                <label className="text-xs text-body_text">Upload Files</label>
+                <label className="text-sm text-body_text">Upload Files</label>
                 <input
                   type="file"
-                  className="file:bg-secondary file:px-4 file:py-2 file:rounded-lg file:border-0 text-xs file:text-body_text file:text-xs file:font-semibold file:hover:bg-purple file:hover:text-black file:duration-300 text-body_text"
+                  className="file:bg-secondary file:px-4 file:py-2 file:rounded-lg file:border-0 text-sm file:text-body_text file:text-sm file:font-semibold file:hover:bg-purple file:hover:text-black file:duration-300 text-body_text"
                 />
               </div>
 
@@ -61,7 +65,7 @@ const Create = () => {
                     checked={selectedRadio === "fixed"}
                     onChange={() => handleOptionChange("fixed")}
                   />
-                  <p className="text-xs text-body_text mb-0">Fixed price</p>
+                  <p className="text-sm text-body_text mb-0">Fixed price</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <input
@@ -69,7 +73,7 @@ const Create = () => {
                     checked={selectedRadio === "unlock"}
                     onChange={() => handleOptionChange("unlock")}
                   />
-                  <p className="text-xs text-body_text mb-0">
+                  <p className="text-sm text-body_text mb-0">
                     Unlock Purchased
                   </p>
                 </div>
@@ -79,28 +83,28 @@ const Create = () => {
                     checked={selectedRadio === "bids"}
                     onChange={() => handleOptionChange("bids")}
                   />
-                  <p className="text-xs text-body_text mb-0">Open for bids</p>
+                  <p className="text-sm text-body_text mb-0">Open for bids</p>
                 </div>
               </div>
 
               <div className="">
-                <label htmlFor="" className="text-body_text text-xs">
+                <label htmlFor="" className="text-body_text text-sm">
                   Title
                 </label>
                 <input
                   type="text"
-                  className="w-full bg-secondary outline-none  focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-xs"
+                  className="w-full bg-secondary outline-none  focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-sm"
                 />
               </div>
 
               <div className="flex flex-col gap-1">
-                <p className="text-xs text-body_text">Description</p>
+                <p className="text-sm text-body_text">Description</p>
                 <textarea
                   name=""
                   id=""
                   cols="30"
                   rows="8"
-                  className="w-full outline-none focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 bg-secondary rounded-lg text-body_text text-xs px-2 py-1 placeholder:text-gray-600"
+                  className="w-full outline-none focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 bg-secondary rounded-lg text-body_text text-sm px-2 py-1 placeholder:text-gray-600"
                   placeholder="Write short description..."
                 ></textarea>
               </div>
@@ -108,12 +112,12 @@ const Create = () => {
               {/* price & category */}
               <div className="flex items-center gap-5">
                 <div className="w-[50%]">
-                  <label htmlFor="" className="text-body_text text-xs">
+                  <label htmlFor="" className="text-body_text text-sm">
                     Price
                   </label>
                   <input
                     type="text"
-                    className="w-full bg-secondary outline-none  focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-xs placeholder:text-[10px] placeholder:text-gray-600"
+                    className="w-full bg-secondary outline-none  focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-sm placeholder:text-[13px] placeholder:text-gray-600"
                     placeholder="*** ETH"
                   />
                 </div>
@@ -129,20 +133,20 @@ const Create = () => {
                     id="options"
                     value={selectedOption}
                     onChange={handleChange}
-                    className="w-full bg-secondary outline-none  focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-xs placeholder:text-[10px] placeholder:text-gray-600"
+                    className="w-full bg-secondary outline-none  focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-sm placeholder:text-[13px] placeholder:text-gray-600"
                   >
                     <option
                       value=""
-                      className="text-body_text text-xs hover:bg-none"
+                      className="text-body_text text-sm hover:bg-none"
                     >
                       Music
                     </option>
-                    <option value="art" className="text-body_text text-xs">
+                    <option value="art" className="text-body_text text-sm">
                       Art
                     </option>
                     <option
                       value="collection"
-                      className="text-body_text text-xs"
+                      className="text-body_text text-sm"
                     >
                       Collection
                     </option>
@@ -153,12 +157,12 @@ const Create = () => {
               {/* calender */}
               <div className="flex items-center gap-5">
                 <div className="relative w-[50%]">
-                  <label htmlFor="" className="text-xs text-body_text">
+                  <label htmlFor="" className="text-sm text-body_text">
                     Starting Date
                   </label>
                   <input
                     type="text"
-                    className="w-full bg-secondary outline-none focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-xs placeholder:text-[10px] placeholder:text-gray-600"
+                    className="w-full bg-secondary outline-none focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-sm placeholder:text-[13px] placeholder:text-gray-600"
                     value={selectedStartDate.toLocaleDateString()}
                     onFocus={() => setShowStartCalendar(true)}
                     onBlur={() => setShowStartCalendar(false)}
@@ -171,7 +175,7 @@ const Create = () => {
                     />
                   </div>
                   {showStartCalendar && (
-                    <div className="absolute top-20 right-0 bg-white shadow-lg">
+                    <div className="absolute top-20 right-0 bg-white shadow-lg z-10">
                       <Calendar
                         value={selectedStartDate}
                         onChange={handleStartDateChange}
@@ -181,12 +185,12 @@ const Create = () => {
                 </div>
 
                 <div className="relative w-[50%]">
-                  <label htmlFor="" className="text-xs text-body_text">
+                  <label htmlFor="" className="text-sm text-body_text">
                     Ending Date
                   </label>
                   <input
                     type="text"
-                    className="w-full bg-secondary outline-none focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-xs placeholder:text-[10px] placeholder:text-gray-600"
+                    className="w-full bg-secondary outline-none focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-sm placeholder:text-[13px] placeholder:text-gray-600"
                     value={selectedEndDate.toLocaleDateString()}
                     onFocus={() => setShowEndCalendar(true)}
                     onBlur={() => setShowEndCalendar(false)}
@@ -199,7 +203,7 @@ const Create = () => {
                     />
                   </div>
                   {showEndCalendar && (
-                    <div className="absolute top-20 right-0 bg-white shadow-lg">
+                    <div className="absolute top-20 right-0 bg-white shadow-lg z-10">
                       <Calendar
                         value={selectedEndDate}
                         onChange={handleEndDateChange}
@@ -212,32 +216,32 @@ const Create = () => {
               {/* royal & copy & size */}
               <div className="flex items-center justify-between gap-5">
                 <div className="w-[32%]">
-                  <label htmlFor="" className="text-body_text text-xs">
+                  <label htmlFor="" className="text-body_text text-sm">
                     Royality
                   </label>
                   <input
                     type="type"
-                    className="w-full bg-secondary outline-none  focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-xs placeholder:text-[10px] placeholder:text-gray-600"
+                    className="w-full bg-secondary outline-none  focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-sm placeholder:text-[13px] placeholder:text-gray-600"
                     placeholder="5%"
                   />
                 </div>
                 <div className="w-[32%]">
-                  <label htmlFor="" className="text-body_text text-xs">
+                  <label htmlFor="" className="text-body_text text-sm">
                     None of copy
                   </label>
                   <input
                     type="number"
-                    className="w-full bg-secondary outline-none  focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-xs placeholder:text-[10px] placeholder:text-gray-600"
+                    className="w-full bg-secondary outline-none  focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-sm placeholder:text-[13px] placeholder:text-gray-600"
                     placeholder="13"
                   />
                 </div>
                 <div className="w-[32%]">
-                  <label htmlFor="" className="text-body_text text-xs">
+                  <label htmlFor="" className="text-body_text text-sm">
                     Size
                   </label>
                   <input
                     type="text"
-                    className="w-full bg-secondary outline-none  focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-xs placeholder:text-[10px] placeholder:text-gray-600"
+                    className="w-full bg-secondary outline-none  focus:outline-gray-700 focus:outline-1 outline-offset-0 duration-200 px-2 py-3 rounded-lg text-body_text text-sm placeholder:text-[13px] placeholder:text-gray-600"
                     placeholder="20 MB"
                   />
                 </div>
@@ -247,13 +251,13 @@ const Create = () => {
               <div className="flex items-center justify-between mt-5">
                 <div className="flex items-start gap-1">
                   <input type="checkbox" />
-                  <span className="text-xs text-body_text">
+                  <span className="text-sm text-body_text">
                     I agree to all terms & conditions.
                   </span>
                 </div>
                 <div className="transform duration-1000 transition text-center hover:bg-gradient-to-l from-[#cc42e4] to-[#6345ed] bg-gradient-to-r from-[#bc3cd3] to-[#6345ed] p-1 rounded-full">
                   <div className="border border-[#fff] border-dashed bg-transparent rounded-3xl">
-                    <button className="px-6 py-2 text-xs  font-bold text-body_text">
+                    <button className="px-6 py-2 text-sm  font-bold text-body_text">
                       Create
                     </button>
                   </div>
@@ -262,7 +266,6 @@ const Create = () => {
             </div>
           </form>
         </div>
-
 
         <div className="w-[25%]">
           <div className="group">
@@ -276,9 +279,7 @@ const Create = () => {
                   />
                 </div>
                 <div className="absolute top-4 left-4">
-                  <div
-                    className="flex gap-1 items-center justify-center px-3 py-2 rounded-3xl bg-black"
-                  >
+                  <div className="flex gap-1 items-center justify-center px-3 py-2 rounded-3xl bg-black">
                     <div>
                       <img
                         src="http://funto.designing-world.com/img/core-img/fire2.png"
@@ -291,7 +292,7 @@ const Create = () => {
                     </p>
                   </div>
                 </div>
-                <div className="absolute p-3 w-full top-32">
+                <div className="absolute p-3 w-full top-40 3xl:top-72">
                   <div className="flex items-center justify-between gap-1 p-2 rounded-xl bg-activity">
                     <div className="flex flex-col items-center">
                       <p className="text-[12px] text-body_text font-bold mb-0">
@@ -331,7 +332,7 @@ const Create = () => {
 
               <div className="flex flex-col gap-2">
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1 text-[9px] text-body_text">
+                  <div className="flex items-center gap-1 text-[12px] text-body_text">
                     <BsBag />
                     <p>Floor price 0.324 ETH</p>
                   </div>
@@ -349,12 +350,12 @@ const Create = () => {
                     </div>
                     <div className="flex flex-col items-start">
                       <p className="text-xs text-body_text font-semibold mb-0 cursor-pointer ">
-                       @creative_art
+                        @creative_art
                       </p>
                     </div>
                   </div>
                   <div className="flex flex-col items-start">
-                    <p className="text-[9px] text-body_text mb-0">
+                    <p className="text-[12px] text-body_text mb-0">
                       Current Bid
                     </p>
                     <p className="text-xs text-body_text font-semibold mb-0">
