@@ -178,7 +178,7 @@ const ItemDetail = () => {
         </div>
       </div>
       {/* second container  */}
-      <div className=" lg:mx-14 col-span-8 my-8  grid gap-2 mx-auto grid-cols-8">
+      <div className="w-[95%] col-span-8 my-8  grid gap-2 mx-auto grid-cols-8">
         <div className="hidden 3xl:block col-span-1"></div>
         {/* scroll */}
         <div className="md:px-3 3xl:col-span-3 px-2 sm:px-6 col-span-8  md:col-span-4 sm:max-md:col-span-8 sm:max-md:mx-auto">
