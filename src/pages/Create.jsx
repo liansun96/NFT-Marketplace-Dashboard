@@ -4,6 +4,7 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import { BsBag } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
+import Navbar from "../components/Nav/Navbar";
 
 const Create = () => {
   //for radios
@@ -38,6 +39,9 @@ const Create = () => {
 
   return (
     <div className="bg-secondary h-full">
+      <div className="sticky top-0 z-10">
+        <Navbar />
+      </div>
       <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-10 w-[95%] mx-auto py-10">
         <div className="flex flex-col gap-5 p-10 rounded-xl border border-gray-700 category-bg w-[75%]">
           <h1 className="text-heading_text text-2xl font-semibold">

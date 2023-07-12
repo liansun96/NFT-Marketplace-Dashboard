@@ -16,7 +16,7 @@ const LineChart = () => {
           approaches.
         </p>
         <div className="flex items-center gap-5">
-          <Link to={'/create'}>
+          <Link to={'/create-new-bid'}>
             <div className="transform duration-1000 transition text-center hover:bg-gradient-to-l from-[#cc42e4] to-[#6345ed] bg-gradient-to-r from-[#bc3cd3] to-[#6345ed] p-1 rounded-full">
               <div className="border border-[#fff] border-dashed bg-transparent rounded-3xl">
                 <button className="px-6 py-2 text-xs  font-bold text-heading_text">

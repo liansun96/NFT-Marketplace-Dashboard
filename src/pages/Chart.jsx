@@ -13,7 +13,7 @@ const Chart = () => {
   return (
     <div className="bg-secondary flex flex-col h-full">
       <div className="w-full w-lg[95%] mx-auto">
-        <div className="w-full lg:w-[98%] mx-auto">
+        <div className="sticky top-0 z-10">
           <Navbar />
         </div>
         <div className="flex flex-col items-center justify-between gap-5 p-1 lg:p-5 mx-auto w-[95%]">
