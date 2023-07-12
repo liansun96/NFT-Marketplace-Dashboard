@@ -8,17 +8,15 @@ export const StateContextProvider = ({ children }) => {
   const [showLanguage, setShowLanguage] = useState(false);
   const [image, setImage] = useState();
   const [showNoti, setShowNoti] = useState(false);
-  const [showSetting, setShowSetting] = useState(false)
   const [showProfile, setShowProfile] = useState(false)
   const [showStatus, setShowStatus] = useState(false)
   const [showPass, setShowPass] = useState(false)
-  const [showPassConfirm, setShowPassConfirm] = useState(false)
   const [token, setToken] = useState(false)
   const nav = useNavigate()
 
   const submitHandler = () => {
     setToken(!token)
-    if (token === true) nav("/crm")
+    if (token === true) nav("/")
   }
 
   const toggleShow = () => {
@@ -32,10 +30,6 @@ export const StateContextProvider = ({ children }) => {
   const toggleNoti = () => {
     setShowNoti(!showNoti);
   };
-
-  const toggleSetting = () => {
-    setShowSetting(!showSetting)
-  }
   const toggleProfile = () => {
     setShowProfile(!showProfile)
     setShowStatus(false)
@@ -46,9 +40,7 @@ export const StateContextProvider = ({ children }) => {
   const toggleShowPass = () => {
     setShowPass(!showPass)
   }
-  const toggleShowPassConfirm = () => {
-    setShowPassConfirm(!showPassConfirm)
-  }
+
 
   const hide = () => {
     show === true && setShow(false);
@@ -65,16 +57,12 @@ export const StateContextProvider = ({ children }) => {
     setImage,
     showNoti,
     toggleNoti,
-    showSetting,
-    toggleSetting,
     showProfile,
     toggleProfile,
     showStatus,
     toggleStatus,
     showPass,
     toggleShowPass,
-    showPassConfirm,
-    toggleShowPassConfirm,
     token,
     submitHandler,
     hide,

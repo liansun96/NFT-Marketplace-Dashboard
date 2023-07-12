@@ -45,7 +45,7 @@ const Account = () => {
       <div className="px-5 mx-auto bg-secondary mt-5">
         <div className="grid gap-x-10 grid-cols-12">
           {/* first */}
-          <div className="flex col-span-12 text-[#C9C9C9] justify-between">
+          {/* <div className="flex col-span-12 text-[#C9C9C9] justify-between">
             <h1 className=" text-lg font-bold">Account</h1>
             <div className="flex  text-[#C9C9C9]">
               <p className=" text-sm">pages</p>
@@ -54,7 +54,7 @@ const Account = () => {
               </p>
               <p className=" text-sm">Account</p>
             </div>
-          </div>
+          </div> */}
           {/* second  */}
           <div className="md:sticky top-0 bg-[#1C1832] h-[700px] rounded-xl shadow-md lg:col-span-3 col-span-12 md:col-span-4 w-full mt-3">
             <div className="flex flex-col items-center pt-8 mx-auto ">
@@ -62,7 +62,7 @@ const Account = () => {
                 <div className="w-[110px] h-[110px] rounded-full overflow-hidden">
                   <img
                     className=""
-                    src="https://d33wubrfki0l68.cloudfront.net/053f2dfd0df2f52c41e903a21d177b0b44abc9b1/1282c/assets/images/profiles/profile-06.jpeg"
+                    src="http://funto.designing-world.com/img/bg-img/u2.jpg"
                     alt=""
                   />
                 </div>
@@ -70,8 +70,8 @@ const Account = () => {
                   <PiPencilDuotone />
                 </span>
               </div>
-              <h1 className="font-bold text-[#C9C9C9] text-xl">Ellie Tucker</h1>
-              <p className="text-slate-500">Assistant Manager</p>
+              <h1 className="font-bold text-[#C9C9C9] text-xl">Mazanov Sky</h1>
+              <p className="text-slate-500">mazanovsky@nft.com</p>
             </div>
             {/* list  */}
             <hr className="w-4/5 mx-auto my-5" />
@@ -88,7 +88,7 @@ const Account = () => {
                         offset={0}
                         duration={500}
                         className="flex ps-5 py-3 hover:text-[#E039FD] hover:border-s-2
-                 hover:border-s-[#00BAC7] text-[#C9C9C9]"
+                 hover:border-s-[#E039FD] text-[#C9C9C9]"
                       >
                         <div className="items-center flex me-3 text-lg">
                           {i.icon}
@@ -127,7 +127,7 @@ const Account = () => {
                       type="email"
                       id="email"
                       class="bg-secondary border lg:w-4/5 border-secondary text-gray-500 text-sm rounded-lg focus:ring-[#00BAC7] focus:border-[#00BAC7] block w-full p-2.5"
-                      defaultValue={"hello"}
+                      defaultValue={"Mazanov Sky"}
                     />
                   </div>
                   <div className="flex flex-col my-6 lg:justify-between lg:flex-row">
@@ -149,7 +149,7 @@ const Account = () => {
                       type="email"
                       id="email"
                       class="bg-secondary border lg:w-4/5 border-secondary text-gray-500 text-sm rounded-lg focus:ring-[#00BAC7] focus:border-[#00BAC7] block w-full p-2.5"
-                      defaultValue={"ellie.tucker@dashly.com"}
+                      defaultValue={"mazanovsky@nft.com"}
                     />
                   </div>
                   <div className="flex flex-col my-6 lg:justify-between lg:flex-row">
@@ -567,7 +567,7 @@ const Account = () => {
                       Username
                     </p>
                     <div class="flex w-4/5">
-                      <span class="inline-flex items-center px-3 text-sm text-gray-500 bg-secondary border border-r-0border-secondary rounded-l-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+                      <span class="inline-flex items-center px-3 text-sm text-gray-500 bg-secondary  rounded-l-md dark:bg-gray-600 dark:text-gray-400">
                         @
                       </span>
                       <input
@@ -681,7 +681,7 @@ const Account = () => {
                     <div className="flex items-center">
                       <label class="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" value="" class="sr-only peer" />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
+                        <div class="w-11 h-6 bg-gray-400 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#bc3cd3] dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>{" "}
                     </div>
@@ -753,7 +753,7 @@ const Account = () => {
                       </div>
                     </div>
                     <div className="flex items-center">
-                      <p className="p-1 px-2 text-sm bg-slate-200 rounded text-slate-500">
+                      <p className="p-1 px-2 text-sm bg-slate-300 rounded text-slate-700">
                         Default
                       </p>
                     </div>
@@ -1036,7 +1036,7 @@ const Account = () => {
                           value=""
                           class="sr-only peer"
                         />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
+                        <div class="w-11 h-6 bg-gray-400 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#bc3cd3] dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>
                     </div>
@@ -1066,7 +1066,7 @@ const Account = () => {
                           value=""
                           class="sr-only peer"
                         />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
+                        <div class="w-11 h-6 bg-gray-400 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#bc3cd3] dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>
                     </div>
@@ -1092,7 +1092,7 @@ const Account = () => {
                     <div className="flex items-center">
                       <label class="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" value="" class="sr-only peer" />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
+                        <div class="w-11 h-6 bg-gray-400 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#bc3cd3] dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>
                     </div>
@@ -1118,7 +1118,7 @@ const Account = () => {
                     <div className="flex items-center">
                       <label class="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" value="" class="sr-only peer" />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
+                        <div class="w-11 h-6 bg-gray-400 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#bc3cd3] dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>
                     </div>
@@ -1143,7 +1143,7 @@ const Account = () => {
                     <div className="flex items-center">
                       <label class="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" value="" class="sr-only peer" />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
+                        <div class="w-11 h-6 bg-gray-400 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#bc3cd3] dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>
                     </div>
@@ -1170,7 +1170,7 @@ const Account = () => {
                     <div className="flex items-center">
                       <label class="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" value="" class="sr-only peer" />
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cyan-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
+                        <div class="w-11 h-6 bg-gray-400 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#bc3cd3] dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E039FD]"></div>
                         {/* <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Toggle me</span> */}
                       </label>
                     </div>
@@ -1214,9 +1214,7 @@ const Account = () => {
             </div>
           </div>
         </div>
-        <div className="text-slate-400 flex w-full p-5 mt-5">
-          © Dashly. 2023 Webinning.{" "}
-        </div>
+        <div className="text-slate-400 flex w-full p-5 mt-2"></div>
 
         {/* second img */}
       </div>

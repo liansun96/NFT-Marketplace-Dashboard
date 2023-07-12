@@ -235,12 +235,12 @@ const Table = () => {
                   <td className="ps-6 h-20 text-sm font-bold">
                     <div className="flex justify-start items-center gap-4">
                       <img src={i.itemImage} className="w-[60px] rounded" alt="" />
-                      <p className="text-lg">{i.title}</p>
+                      <p className="text-base">{i.title}</p>
                     </div>
                   </td>
-                  <td className="ps-6  ">{i.openPrice} ETH</td>
-                  <td className="ps-6  ">{i.yourOffer} ETH</td>
-                  <td className="ps-6  ">
+                  <td className="ps-6 text-sm">{i.openPrice} ETH</td>
+                  <td className="ps-6 text-sm">{i.yourOffer} ETH</td>
+                  <td className="ps-6 text-sm">
                     <div className="flex justify-start items-center gap-4">
                       <img
                         src={i.recentOfferProfile}
