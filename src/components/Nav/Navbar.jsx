@@ -1,7 +1,6 @@
 import React from "react";
 import { BiSearch } from "react-icons/bi";
 import { PiBell, PiMoon } from "react-icons/pi";
-import { MdOutlineSettings } from "react-icons/md";
 import { stateContextCustom } from "../../context/StateContext";
 import uk from "../../assets/icons8-great-britain-96.png";
 import Theme from "./Theme";
@@ -33,7 +32,7 @@ const Navbar = () => {
 
   return (
     <>
-      <main className="flex relative w-full items-center justify-center md:justify-between md:px-10 p-5 bg-[#1C1832] shadow-lg">
+      <main className="bg-[#070b24ec] bg- flex relative w-full items-center justify-center md:justify-between md:px-10 p-5 shadow-lg">
         <div className="hidden relative w-[287.5px] md:flex items-center shadow rounded-md">
           <input
             type="text"

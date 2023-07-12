@@ -90,7 +90,7 @@ export default function SignUp() {
                       />
                       <div
                         onClick={toggleShowPass}
-                        className="absolute right-5 text-slate-300 bottom-3"
+                        className="absolute right-5 text-slate-300 bottom-3 cursor-pointer"
                       >
                         {!showPass ? <LiaEye /> : <LiaEyeSlash />}
                       </div>
@@ -98,6 +98,7 @@ export default function SignUp() {
                   </div>
                 </div>
               </div>
+              <Link to={"/sign-in"}>
               <div
                 className="transform duration-1000 mt-9 text-center transition hover:bg-gradient-to-l bg-gradient-to-r from-[#bc3cd3] to-[#6345ed] p-1 rounded-full"
               >
@@ -107,6 +108,7 @@ export default function SignUp() {
                   </button>
                 </div>
               </div>
+              </Link>
               <div className="text-center text-md my-5 text-slate-400">
                 <p>Or continue with</p>
               </div>

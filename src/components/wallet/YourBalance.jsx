@@ -8,7 +8,7 @@ import CountUp from "react-countup";
 
 export default function YourBalance() {
   return (
-      <main className={`bg-[#1D1933] w-full rounded-lg p-5 flex justify-between flex-col`}>
+      <main className={`category-bg w-full rounded-lg p-5 flex justify-between flex-col`}>
         <div className="flex flex-wrap lg:flex-nowrap">
           <div className="basis-2/5">
             <div className="m-5 mb-10">

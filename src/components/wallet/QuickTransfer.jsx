@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BiSolidCheckCircle } from "react-icons/bi";
 
 export default function QuickTransfer() {
-  const [value, setValue] = useState(23456); // Initial value
+  const [value, setValue] = useState(49069); // Initial value
 
   const handleInputChange = (event) => {
     setValue(event.target.value);
@@ -12,7 +12,7 @@ export default function QuickTransfer() {
       <h2 className="text-white font-bold text-xl mt-10 mb-5">
         Quick Transfer
       </h2>
-      <div className="bg-[#1D1933] text-white p-5 rounded-lg">
+      <div className="category-bg text-white p-5 rounded-lg">
         <div className="flex justify-between items-center text-white bg-[#131129] p-2 rounded-lg">
           <div className="flex gap-3 items-center">
             <img
@@ -37,7 +37,7 @@ export default function QuickTransfer() {
             max="88455"
             value={value}
             onChange={handleInputChange}
-            className="w-full accent-[#E039FD]  bg-white h-1 rounded-full"
+            className="w-full accent-[#E039FD] cursor-pointer bg-white h-1 rounded-full"
           />
 
           <div className="flex items-center justify-between text-sm">

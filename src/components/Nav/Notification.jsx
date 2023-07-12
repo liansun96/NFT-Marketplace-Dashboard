@@ -8,7 +8,7 @@ export default function Notification() {
     >
       {notifications.map((i) => {
         return (
-          <li key={i.id} className="flex items-start px-3 py-2 gap-3 cursor-pointer select-none text-white text-sm w-full border-b">
+          <li key={i.id} className="nav-dropdown items-start px-3 py-2 gap-3 cursor-pointer select-none w-full border-b">
             <img src={i.user_image} alt="" className="w-[40px]" />
             <div>
             <p className="inline-block">{i.description}</p>
