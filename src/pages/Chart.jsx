@@ -11,7 +11,7 @@ import TopBuyers from "../components/Charts/TopBuyers";
 
 const Chart = () => {
   return (
-    <div className="bg-[#19152c] flex flex-col h-full">
+    <div className="bg-secondary flex flex-col h-full">
       <div className="w-full w-lg[95%] mx-auto">
         <div className="w-full lg:w-[98%] mx-auto">
           <Navbar />

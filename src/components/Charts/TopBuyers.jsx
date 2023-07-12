@@ -10,7 +10,7 @@ import BuyerCard from "./BuyerCard";
 const TopBuyers = () => {
   return (
     <div className="w-full lg:w-[49%]">
-      <div className="flex flex-col justify-between gap-3 px-5 pt-5 bg-secondary rounded-xl">
+      <div className="flex flex-col justify-between gap-3 px-5 pt-5 category-bg rounded-xl">
         <h5 className="text-md text-heading_text font-semibold">Top Buyers</h5>
 
         <div className="hidden lg:block">
