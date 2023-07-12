@@ -9,31 +9,32 @@ import TrendingActions from "../components/Charts/TrendingActions";
 import Authors from "../components/Charts/Authors";
 import TopBuyers from "../components/Charts/TopBuyers";
 
-const Chart
- = () => {
+const Chart = () => {
   return (
-    <div className="bg-secondary flex flex-col">
-      <div className=" w-full 3xl:w-[80%] 4xl:[60%] mx-auto">
-        <Navbar />
-        <div className="flex flex-col items-center justify-between gap-5 p-5 mx-auto w-[95%]">
-          <section className="flex items-center justify-between gap-5 w-full h-full">
+    <div className="bg-primary flex flex-col h-full">
+      <div className="w-full 2xl:w-[90%] 3xl:w-[80%] 4xl:w-[60%] mx-auto">
+        <div className="w-full lg:w-[98%] mx-auto">
+          <Navbar />
+        </div>
+        <div className="flex flex-col items-center justify-between gap-5 p-1 lg:p-5 mx-auto w-[95%]">
+          <section className="flex flex-col lg:flex-row justify-between gap-5 w-full items-center lg:items-stretch">
             <LineChart />
             <AreaChart />
           </section>
 
-          <section className="flex items-center justify-between gap-5 w-full h-full">
+          <section className="flex flex-col lg:flex-row items-center lg:items-stretch  justify-between gap-5 w-full">
             <Table />
             <TrendingActions />
           </section>
 
-          <section className="flex items-center justify-between gap-5 w-full h-full">
+          <section className="flex flex-col lg:flex-row justify-between gap-5 w-full items-center lg:items-stretch">
             <PriceHistory />
             <TopSeller />
           </section>
 
-          <section className="flex items-center justify-between gap-5 w-full h-full">
-            <Authors/>
-            <TopBuyers/>
+          <section className="flex flex-col lg:flex-row justify-between gap-5 w-full items-center lg:items-stretch">
+            <Authors />
+            <TopBuyers />
           </section>
         </div>
       </div>
@@ -41,5 +42,4 @@ const Chart
   );
 };
 
-export default Chart
-;
+export default Chart;
