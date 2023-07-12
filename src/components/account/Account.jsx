@@ -1214,7 +1214,7 @@ const Account = () => {
             </div>
           </div>
         </div>
-        <div className="text-slate-400 flex w-full p-5 mt-3"></div>
+        <div className="text-slate-400 flex w-full p-5 mt-2"></div>
 
         {/* second img */}
       </div>
