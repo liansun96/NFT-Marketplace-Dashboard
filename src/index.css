@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 .auth-bg{
     background-image: url("https://themebeyond.com/html/nftmak/assets/img/banner/banner_bg.jpg");
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 *{

@@ -8,14 +8,14 @@ import CountUp from "react-countup";
 
 export default function YourBalance() {
   return (
-      <main className={`bg-[#1D1933] w-full rounded-lg p-5 h- flex justify-between flex-col`}>
+      <main className={`bg-[#1D1933] w-full rounded-lg p-5 flex justify-between flex-col`}>
         <div className="flex flex-wrap lg:flex-nowrap">
           <div className="basis-2/5">
-            <div className="mb-10">
+            <div className="m-5 mb-10">
               <h2 className={"text-xl text-white font-bold"}>Your Balance</h2>
               <p className={`text-xs text-white`}>June 1, 2023, 08:22 AM</p>
             </div>
-            <div className="mb-10">
+            <div className="m-5 mb-10">
               <h2 className={"text-sm text-white font-bold"}>This Month</h2>
               <p className={"text-3xl text-white font-bold py-3"}>$ 
               <CountUp end={23741.98} decimals={2} duration={2}/>
@@ -26,7 +26,7 @@ export default function YourBalance() {
               </p>
             </div>
           </div>
-          <div className="basis-3/5 mx-auto">
+          <div className="basis-3/5 mx-auto my-5">
             <Chart/>
           </div>
         </div>

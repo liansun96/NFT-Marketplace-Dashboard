@@ -3,6 +3,7 @@ import { BiRightArrow } from "react-icons/bi";
 import { TbMathGreater } from "react-icons/tb";
 import Status from "./Status";
 import { stateContextCustom } from "../../context/StateContext";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   const {showStatus, toggleStatus} = stateContextCustom()
@@ -17,8 +18,8 @@ const Profile = () => {
           alt=""
         />
         <div className="text-sm text-white">
-          <h4 className="font-bold">Ellie Tucker</h4>
-          <p>ellie.tucker@dashly.com</p>
+          <h4 className="font-bold">Mazanov Sky</h4>
+          <p>mazanovsky@nft.com</p>
         </div>
       </div>
       <div className="flex flex-col p-2 border-b text-sm relative">
@@ -34,7 +35,9 @@ const Profile = () => {
         <button className="nav-dropdown">Settings</button>
       </div>
       <div className="p-2">
+        <Link to={'/sign-in'}>
         <button className="nav-dropdown w-full text-sm">Sign out</button>
+        </Link>
       </div>
     </div>
   );
