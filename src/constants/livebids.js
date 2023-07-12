@@ -2,10 +2,10 @@ export const activeBids = [
   {
     id: "activeBids1",
     itemImage:
-      "https://themebeyond.com/html/nftmak/assets/img/others/top_collection01.jpg",
+      "https://i.seadn.io/gae/lenZ3y5d7SMv_Jfd9IKm-1nVQCIyNAtROW9vgdZRkMjvXQzP5wxz5qCPPk4niiqpVcrLVdz9htj8Q9Ga0tU0_tJgIkZhrFFjPIgr?w=500&auto=format",
     recentOfferProfile:
-      "https://themebeyond.com/html/nftmak/assets/img/others/creators_01.png",
-    title: "NFT Collection",
+      "https://themebeyond.com/html/nftmak/assets/img/others/creators_06.png",
+    title: "Bored Ape Yacht",
     price: 5.4,
     openPrice: 0.2548,
     yourOffer: 0.256,
@@ -14,10 +14,10 @@ export const activeBids = [
   {
     id: "activeBids2",
     itemImage:
-      "https://themebeyond.com/html/nftmak/assets/img/others/top_collection05.jpg",
+      "https://i.seadn.io/gae/l3gsBH9gOWTCT-l3nfZlQ9VTsevIVfaGSOYdFY0ozCrqMHYcL4kFO0m7IVDURJbeLXWwJpxMtSojIFKwr3x1KGs2Z8Sf7ScfoNJl?w=500&auto=format",
     recentOfferProfile:
       "https://themebeyond.com/html/nftmak/assets/img/others/creators_02.png",
-    title: "Colorful Abstract",
+    title: "Bored Ape Yacht",
     price: 5.4,
     openPrice: 0.2548,
     yourOffer: 0.256,
@@ -26,10 +26,10 @@ export const activeBids = [
   {
     id: "activeBids3",
     itemImage:
-      "https://themebeyond.com/html/nftmak/assets/img/others/top_collection06.jpg",
+      "https://i.seadn.io/gcs/files/c0c493929bf927d9baf07bea765c9a14.png?w=500&auto=format",
     recentOfferProfile:
       "https://themebeyond.com/html/nftmak/assets/img/others/creators_03.png",
-    title: "The Girl Firefly",
+    title: "Nakamigos",
     price: 5.4,
     openPrice: 0.2548,
     yourOffer: 0.256,
@@ -38,10 +38,10 @@ export const activeBids = [
   {
     id: "activeBids4",
     itemImage:
-      "https://themebeyond.com/html/nftmak/assets/img/others/top_collection07.jpg",
+      "https://i.seadn.io/gcs/files/0129b38b219c8d76544b0d711ce9777a.png?w=500&auto=format",
     recentOfferProfile:
       "https://themebeyond.com/html/nftmak/assets/img/others/creators_04.png",
-    title: "Forest Princess",
+    title: "KILLABEARS",
     price: 5.4,
     openPrice: 0.2548,
     yourOffer: 0.256,
@@ -50,10 +50,10 @@ export const activeBids = [
   {
     id: "activeBids5",
     itemImage:
-      "https://themebeyond.com/html/nftmak/assets/img/others/top_collection08.jpg",
+      "https://i.seadn.io/gcs/files/a450a6798dbce15561f95011906e14e2.png?w=500&auto=format",
     recentOfferProfile:
-      "https://themebeyond.com/html/nftmak/assets/img/others/creators_05.png",
-    title: "NFT Painting",
+      "https://themebeyond.com/html/nftmak/assets/img/others/creators_04.png",
+    title: "KILLABEARS",
     price: 5.4,
     openPrice: 0.2548,
     yourOffer: 0.256,
@@ -62,10 +62,10 @@ export const activeBids = [
   {
     id: "activeBids6",
     itemImage:
-      "https://themebeyond.com/html/nftmak/assets/img/others/top_collection09.jpg",
+      "https://i.seadn.io/gcs/files/828707b7a0298edf43a3a4561b8bd73f.png?w=500&auto=format",
     recentOfferProfile:
-      "https://themebeyond.com/html/nftmak/assets/img/others/creators_06.png",
-    title: "Colorful Abstract",
+      "https://themebeyond.com/html/nftmak/assets/img/others/creators_01.png",
+    title: "Dreadfulz",
     price: 5.4,
     openPrice: 0.2548,
     yourOffer: 0.256,
@@ -74,10 +74,10 @@ export const activeBids = [
   {
     id: "activeBids7",
     itemImage:
-      "https://themebeyond.com/html/nftmak/assets/img/others/top_collection10.jpg",
+      "https://i.seadn.io/gcs/files/c07363ae106def0ad8e13cdf82698ce2.png?w=500&auto=format",
     recentOfferProfile:
-      "https://themebeyond.com/html/nftmak/assets/img/others/creators_01.png",
-    title: "Bid Collection",
+      "https://themebeyond.com/html/nftmak/assets/img/others/creators_06.png",
+    title: "TAKASHI MURAKAMI",
     price: 5.4,
     openPrice: 0.2548,
     yourOffer: 0.256,
@@ -86,10 +86,10 @@ export const activeBids = [
   {
     id: "activeBids8",
     itemImage:
-      "https://themebeyond.com/html/nftmak/assets/img/others/top_collection11.jpg",
+      "https://i.seadn.io/gcs/files/24b800dd0649303321704f71bf0fe74f.png?w=500&auto=format",
     recentOfferProfile:
       "https://themebeyond.com/html/nftmak/assets/img/others/creators_02.png",
-    title: "NFT Collection",
+    title: "Dreadfulz",
     price: 5.4,
     openPrice: 0.2548,
     yourOffer: 0.256,
@@ -191,5 +191,32 @@ export const activeBids = [
     yourOffer: 0.6799,
     time: "4 Hours 44 min 44s",
   },
+  {
+    id: "activeBids17",
+    itemImage:
+      "https://i.seadn.io/gae/TqiYF4UYcIVeCvdS6ZTASnM5QshDIDcRHEQMmRuZdjYuFZk_lZVny-4jxGJyGYjMfYO1mz_TMkYyiUvGiDwxqZfA7tcApw6WNv-xHQ?w=500&auto=format",
+    recentOfferProfile:
+      "https://themebeyond.com/html/nftmak/assets/img/others/creators_06.png",
+    title: "Bored Ape Yacht Club",
+    price: 7.8,
+    openPrice: 0.7889,
+    yourOffer: 0.7889,
+    time: "6 Hours 34 min 14s",
+  },
+  {
+    id: "activeBids18",
+    itemImage:
+      "https://i.seadn.io/gae/engEfQyDjcKQI8qRkyyMPgVGNeRxGSjZ10eY1CvmecZSFAalNshvn0YPFGPyqu8tFZd7laEvb5d4yNhTAMTthOLNBhV8UWNTRwy-?w=500&auto=format",
+    recentOfferProfile:
+      "https://themebeyond.com/html/nftmak/assets/img/others/creators_06.png",
+    title: "Bored Ape Yacht Club",
+    price: 7.9,
+    openPrice: 0.7999,
+    yourOffer: 0.7999,
+    time: "9 Hours 12 min 18s",
+  },
   
 ];
+
+
+
