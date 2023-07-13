@@ -29,18 +29,7 @@ const ItemDetail = () => {
             <h1 className="sm:p-3 p-2 text-gray-300 px-4 sm:px-6 text-xs sm:text-sm rounded-full  hover:bg-[#E039FD] duration-200 bg-[#241F3D] font-semibold">
               GO BACK TO BIDS LIST
             </h1>
-          </Link>
-          <div className="flex items-center">
-            <h1 className=" sm:px-1 mx-1  hover:text-[#E039FD]  duration-200 text-gray-300 text-sm">
-              Home
-            </h1>
-            <h1 className="font-bold sm:px-1 mx-1 text-gray-300  ">
-              <AiOutlineRight />
-            </h1>
-            <h1 className=" sm:px-1 mx-1  hover:text-[#E039FD] duration-200 text-gray-300 text-sm">
-              Product Details
-            </h1>
-          </div>
+          </Link>         
         </div>
       </div>
 
@@ -183,7 +172,7 @@ const ItemDetail = () => {
         {/* scroll */}
         <div className="md:px-3 3xl:col-span-3 px-2 sm:px-6 col-span-8  md:col-span-4 sm:max-md:col-span-8 sm:max-md:mx-auto">
           {/* <div className="md:px-3 px-6 col-span-8 md:max-lg:mx-auto  md:col-span-4 sm:max-md:col-span-8 sm:max-md:mx-auto"> */}
-          <div className="relative overflow-x-auto sm:rounded-lg">
+          <div className="relative overflow-x-scroll sm:rounded-lg">
             <div className="w-full h-[445px]">
               <table className="w-full ">
                 <tbody>

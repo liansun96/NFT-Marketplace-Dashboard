@@ -9,10 +9,10 @@ const Dashboard = () => {
 
   return (
     <div className="flex">
-      <div className="w-[17%] z-10">
+      <div className="w-[0%] lg:w-[17%] z-10">
         <Sidebar />
       </div>
-      <div className="w-[83%]">
+      <div className="w-full lg:w-[83%]">
         <Outlet />
       </div>
     </div>

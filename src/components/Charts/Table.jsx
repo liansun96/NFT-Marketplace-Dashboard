@@ -48,7 +48,7 @@ const Table = () => {
       </div>
 
       <div className="w-full overflow-x-scroll">
-        <table className="w-[650px]">
+        <table className="w-[125%] 3xl:w-[100%]">
           <thead className="hidden">
             <tr>
               <th>Name</th>
@@ -84,7 +84,7 @@ const Table = () => {
                   </div>
                 </td>
                 <td className="px-5 h-[58px] border-b border-t border-e border-gray-700 text-heading_text text-sm">
-                  <div className="flex items-center">
+                  <div className="flex items-center gap-1">
                     <AiOutlineClockCircle />
                     {activity.time}
                   </div>

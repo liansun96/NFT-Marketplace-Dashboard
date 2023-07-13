@@ -80,12 +80,12 @@ const Table = () => {
 
   return (
     <div>
-      <div className="w-[95%] mx-auto category-bg text-body_text rounded-2xl custom-shadow">
-        <div className="flex justify-between items-center p-6">
+      <div className="w-[95%] mx-auto overflow-x-auto category-bg text-body_text rounded-2xl custom-shadow relative">
+        <div className="flex justify-between items-center p-6 sticky top-0 left-0">
           <h6 className="text-sm font-bold uppercase">Bids Lists</h6>
           <BsThreeDotsVertical className="text-[#9ea9b4]" />
         </div>
-        <table className="w-full">
+        <table className="w-[900px] md:w-full overflow-x-scroll">
           <thead>
             <tr className="bg-primary">
               <th className="text-start py-2 px-4">
@@ -247,7 +247,7 @@ const Table = () => {
                         className="w-[30px]"
                         alt=""
                       />
-                      <p>{i.title}</p>
+                      <p>{i.openPrice} ETH</p>
                     </div>
                   </td>
                   <td className="pe-6  text-end">{i.time}</td>

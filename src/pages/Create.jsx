@@ -273,7 +273,7 @@ const Create = () => {
               <div className="relative">
                 <div className="overflow-hidden rounded-lg duration-300">
                   <img
-                    src="http://funto.designing-world.com/img/bg-img/17.jpg"
+                    src="https://i.seadn.io/gae/ZnByXz_VUefuajJLJR1EAgrgZY4DPEx6yqTAZ8045q8VMS1LZ5qDY7Njz_FPWAmzqj1ApzjaEkO1KSXVVJT8GR9O1vgDCXN6XwVe-Dc?w=500&auto=format"
                     alt=""
                     className="group-hover:scale-110 duration-300"
                   />

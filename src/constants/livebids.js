@@ -197,7 +197,7 @@ export const activeBids = [
       "https://i.seadn.io/gae/TqiYF4UYcIVeCvdS6ZTASnM5QshDIDcRHEQMmRuZdjYuFZk_lZVny-4jxGJyGYjMfYO1mz_TMkYyiUvGiDwxqZfA7tcApw6WNv-xHQ?w=500&auto=format",
     recentOfferProfile:
       "https://themebeyond.com/html/nftmak/assets/img/others/creators_06.png",
-    title: "Bored Ape Yacht Club",
+    title: "Bored Ape Yacht",
     price: 7.8,
     openPrice: 0.7889,
     yourOffer: 0.7889,
@@ -209,7 +209,7 @@ export const activeBids = [
       "https://i.seadn.io/gae/engEfQyDjcKQI8qRkyyMPgVGNeRxGSjZ10eY1CvmecZSFAalNshvn0YPFGPyqu8tFZd7laEvb5d4yNhTAMTthOLNBhV8UWNTRwy-?w=500&auto=format",
     recentOfferProfile:
       "https://themebeyond.com/html/nftmak/assets/img/others/creators_06.png",
-    title: "Bored Ape Yacht Club",
+    title: "Bored Ape Yacht",
     price: 7.9,
     openPrice: 0.7999,
     yourOffer: 0.7999,
