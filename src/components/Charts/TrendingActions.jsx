@@ -22,7 +22,7 @@ const TrendingActions = () => {
         <h5 className="text-xl text-white font-semibold">Trending Actions</h5>
       </div>
 
-      <div className="hidden lg:block 3xl:hidden trending overflow-hidden">
+      <div className="hidden lg:block 2xl:hidden trending overflow-hidden">
         <Swiper
           slidesPerView={2}
           spaceBetween={20}
