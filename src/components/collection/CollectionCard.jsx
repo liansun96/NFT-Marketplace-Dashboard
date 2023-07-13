@@ -11,7 +11,7 @@ const CollectionCard = ({ aution }) => {
     navigate(`/collection-detail/${aution?.id}`);
   };
   return (
-    <div key={aution.id} className="group w-full 2xl:w-[360px] 3xl:w-[410px]">
+    <div key={aution.id} className="group w-full lg:w-[250px] 2xl:w-[280px] 3xl:w-[320px]">
       <div className="flex flex-col overflow-hidden gap-4 category-bg p-5 rounded-xl group-hover:-translate-y-1 duration-300">
         <div className="relative overflow-hidden">
           <div className="w-full overflow-hidden rounded-xl duration-300">
