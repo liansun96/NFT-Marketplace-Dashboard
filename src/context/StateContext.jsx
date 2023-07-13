@@ -65,6 +65,7 @@ export const StateContextProvider = ({ children }) => {
     showPass,
     toggleShowPass,
     token,
+    setToken,
     submitHandler,
     hide,
     isOpen,
