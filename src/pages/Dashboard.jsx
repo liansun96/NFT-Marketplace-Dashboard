@@ -15,7 +15,7 @@ const Dashboard = () => {
         !token && nav("sign-in")
         setIsLoading(false);
       }, 2000);
-  })
+  },[])
 
   if (isLoading) {
     return (
