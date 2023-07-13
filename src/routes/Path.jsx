@@ -14,7 +14,7 @@ import ItemDetail from "../components/itemDetail/ItemDetail";
 import BidHistory from "../components/itemDetail/Nest/BidHistory";
 import Info from "../components/itemDetail/Nest/Info";
 import Provenance from "../components/itemDetail/Nest/Provenance";
-import CollectionDetail from "../components/collectionDetail/collectionDetail";
+import CollectionDetail from "../components/collectionDetail/CollectionDetail";
 import BidHistoryC from "../components/collectionDetail/Nest/BidHistoryC";
 import InfoC from "../components/collectionDetail/Nest/InfoC";
 import ProvenanceC from "../components/collectionDetail/Nest/ProvenanceC";
@@ -33,11 +33,11 @@ const Path = () => {
           <Route path="info" element={<Info />} />
           <Route path="pro" element={<Provenance />} />
         </Route>
-        {/* <Route path="/collection-detail/:id" element={<CollectionDetail />}>
+        <Route path="/collection-detail/:id" element={<CollectionDetail />}>
           <Route path="" index element={<BidHistoryC />} />
           <Route path="info" element={<InfoC />} />
           <Route path="pro" element={<ProvenanceC />} />
-        </Route> */}
+        </Route>
         <Route path="/collection-list" element={<CollectionList />} />
         <Route path="/create-new-bid" element={<Create />} />
         <Route
