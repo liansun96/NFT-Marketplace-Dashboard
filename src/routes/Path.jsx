@@ -20,9 +20,6 @@ import InfoC from "../components/collectionDetail/Nest/InfoC";
 import ProvenanceC from "../components/collectionDetail/Nest/ProvenanceC";
 
 
-
-
-
 const Path = () => {
   return (
     <Routes>
