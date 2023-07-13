@@ -10,11 +10,18 @@ import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
 import Chart from "../pages/Chart";
 import Create from "../pages/Create";
-
 import ItemDetail from "../components/itemDetail/ItemDetail";
 import BidHistory from "../components/itemDetail/Nest/BidHistory";
 import Info from "../components/itemDetail/Nest/Info";
 import Provenance from "../components/itemDetail/Nest/Provenance";
+import CollectionDetail from "../components/collectionDetail/collectionDetail";
+import BidHistoryC from "../components/collectionDetail/Nest/BidHistoryC";
+import InfoC from "../components/collectionDetail/Nest/InfoC";
+import ProvenanceC from "../components/collectionDetail/Nest/ProvenanceC";
+
+
+
+
 
 const Path = () => {
   return (
@@ -28,6 +35,11 @@ const Path = () => {
           <Route path="" index element={<BidHistory />} />
           <Route path="info" element={<Info />} />
           <Route path="pro" element={<Provenance />} />
+        </Route>
+        <Route path="/collection-detail/:id" element={<CollectionDetail />}>
+          <Route path="" index element={<BidHistoryC />} />
+          <Route path="info" element={<InfoC />} />
+          <Route path="pro" element={<ProvenanceC />} />
         </Route>
         <Route path="/collection-list" element={<CollectionList />} />
         <Route path="/create-new-bid" element={<Create />} />

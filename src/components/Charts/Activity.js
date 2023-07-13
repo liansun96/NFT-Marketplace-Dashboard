@@ -51,7 +51,7 @@ export const activities = [
 
 export const autions = [
   {
-    id: 1,
+    id: "aution1",
     image:
       "https://i.seadn.io/gae/lenZ3y5d7SMv_Jfd9IKm-1nVQCIyNAtROW9vgdZRkMjvXQzP5wxz5qCPPk4niiqpVcrLVdz9htj8Q9Ga0tU0_tJgIkZhrFFjPIgr?w=500&auto=format",
     bid: "New Bid",
@@ -62,7 +62,7 @@ export const autions = [
     price: "0.784 Eth",
   },
   {
-    id: 2,
+    id: "aution2",
     image:
       "https://i.seadn.io/gcs/files/a450a6798dbce15561f95011906e14e2.png?w=500&auto=format",
     bid: "New Bid",
@@ -73,7 +73,7 @@ export const autions = [
     price: "0.861 Eth",
   },
   {
-    id: 3,
+    id: "aution3",
     image: "https://i.seadn.io/gcs/files/4aa4e14b73042d482b3479de5b6c44e6.png?w=500&auto=format",
     bid: "Bid Done",
     profile: "http://funto.designing-world.com/img/bg-img/u3.jpg",
@@ -83,7 +83,7 @@ export const autions = [
     price: "0.784 Eth",
   },
   {
-    id: 4,
+    id: "aution4",
     image: "https://i.seadn.io/gcs/files/93625421a671ee5ab5f4fb5d0c3ffe0f.png?w=500&auto=format",
     
     bid: "Hot Bid",
@@ -94,7 +94,7 @@ export const autions = [
     price: "0.784",
   },
   {
-    id: 5,
+    id: "aution5",
     image:
       "https://i.seadn.io/gcs/files/828707b7a0298edf43a3a4561b8bd73f.png?w=500&auto=format",
     bid: "New Bid",
@@ -105,7 +105,7 @@ export const autions = [
     price: "0.784 Eth",
   },
   {
-    id: 6,
+    id: "aution6",
     image: "https://i.seadn.io/gcs/files/130fdfe43e20a1bb44f1ebe0fc5ada6c.png?w=500&auto=format",
     bid: "New Bid",
     profile: "http://funto.designing-world.com/img/bg-img/u1.jpg",
@@ -115,7 +115,7 @@ export const autions = [
     price: "0.861 Eth",
   },
   {
-    id: 7,
+    id: "aution7",
     image: "https://i.seadn.io/gcs/files/2401efdcf41fd10daad9f2a3bb0d04dc.png?w=500&auto=format",
     bid: "Bid Done",
     profile: "http://funto.designing-world.com/img/bg-img/u3.jpg",
@@ -125,7 +125,7 @@ export const autions = [
     price: "0.784 Eth",
   },
   {
-    id: 8,
+    id: "aution8",
     image:
       "https://i.seadn.io/gcs/files/7b6da0edb99f786f3039176e5e9f0635.png?w=500&auto=format",
     bid: "Hot Bid",
@@ -136,7 +136,7 @@ export const autions = [
     price: "0.784",
   },
   {
-    id: 9,
+    id: "aution9",
     image:
       "https://i.seadn.io/gae/BdxvLseXcfl57BiuQcQYdJ64v-aI8din7WPk0Pgo3qQFhAUH-B6i-dCqqc_mCkRIzULmwzwecnohLhrcH8A9mpWIZqA7ygc52Sr81hE?w=500&auto=format",
     bid: "Hot Bid",

@@ -1,8 +1,15 @@
 import React from "react";
 import { BsBag } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 const CollectionCard = ({ aution }) => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/collection-detail/${aution?.id}`);
+  };
   return (
     <div key={aution.id} className="group w-full 2xl:w-[360px] 3xl:w-[410px]">
       <div className="flex flex-col overflow-hidden gap-4 category-bg p-5 rounded-xl group-hover:-translate-y-1 duration-300">
@@ -37,20 +44,36 @@ const CollectionCard = ({ aution }) => {
           <div className="absolute p-3 w-full top-52 lg:top-32">
             <div className="flex items-center justify-between gap-1 p-2 rounded-xl bg-activity">
               <div className="flex flex-col items-center">
-                <p className="text-[12px] text-heading_text font-bold mb-0">0</p>
-                <p className="text-[12px] text-heading_text font-bold mb-0">Days</p>
+                <p className="text-[12px] text-heading_text font-bold mb-0">
+                  0
+                </p>
+                <p className="text-[12px] text-heading_text font-bold mb-0">
+                  Days
+                </p>
               </div>
               <div className="flex flex-col items-center">
-                <p className="text-[12px] text-heading_text font-bold mb-0">0</p>
-                <p className="text-[12px] text-heading_text font-bold mb-0">Hours</p>
+                <p className="text-[12px] text-heading_text font-bold mb-0">
+                  0
+                </p>
+                <p className="text-[12px] text-heading_text font-bold mb-0">
+                  Hours
+                </p>
               </div>
               <div className="flex flex-col items-center">
-                <p className="text-[12px] text-heading_text font-bold mb-0">0</p>
-                <p className="text-[12px] text-heading_text font-bold mb-0">Min</p>
+                <p className="text-[12px] text-heading_text font-bold mb-0">
+                  0
+                </p>
+                <p className="text-[12px] text-heading_text font-bold mb-0">
+                  Min
+                </p>
               </div>
               <div className="flex flex-col items-center">
-                <p className="text-[12px] text-heading_text font-bold mb-0">0</p>
-                <p className="text-[12px] text-heading_text font-bold mb-0">Sec</p>
+                <p className="text-[12px] text-heading_text font-bold mb-0">
+                  0
+                </p>
+                <p className="text-[12px] text-heading_text font-bold mb-0">
+                  Sec
+                </p>
               </div>
             </div>
           </div>
@@ -102,7 +125,7 @@ const CollectionCard = ({ aution }) => {
         <div className="w-full">
           <div className="transform duration-1000 transition text-center hover:bg-gradient-to-l from-[#cc42e4] to-[#6345ed] bg-gradient-to-r from-[#bc3cd3] to-[#6345ed] p-1 rounded-full">
             <div className="border border-[#fff] border-dashed bg-transparent rounded-3xl">
-              <button className="px-6 py-2 text-xs  font-bold text-heading_text">
+              <button onClick={handleClick} className="px-6 py-2 text-xs  font-bold text-heading_text">
                 Place Bid
               </button>
             </div>

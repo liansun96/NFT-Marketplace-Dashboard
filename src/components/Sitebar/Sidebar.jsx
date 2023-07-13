@@ -29,13 +29,15 @@ const Sidebar = () => {
 
   return (
     <div className=" h-screen overflow-y-scroll bg-primary text-body_text sticky top-0 left-0 custom-dark-shadow">
-      <div className="flex justify-between px-4 py-6">
-        <img
-          src="https://themebeyond.com/html/nftmak/assets/img/logo/naftmak.svg"
-          className="mx-auto scale-125 my-2"
-          alt=""
-        />
-      </div>
+      <Link to={'/'}>
+        <div className="flex justify-between px-4 py-6">
+          <img
+            src="https://themebeyond.com/html/nftmak/assets/img/logo/naftmak.svg"
+            className="mx-auto scale-125 my-2"
+            alt=""
+          />
+        </div>
+      </Link>
       <div className="px-4 py-6">
         <div className="bg-secondary custom-light-shadow p-5 rounded-xl">
           <h6 className="text-lg font-semibold text-center">Current Balance</h6>
