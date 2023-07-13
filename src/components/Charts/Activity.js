@@ -135,4 +135,15 @@ export const autions = [
     email: "@nft_fun",
     price: "0.784",
   },
+  {
+    id: 9,
+    image:
+      "https://i.seadn.io/gae/BdxvLseXcfl57BiuQcQYdJ64v-aI8din7WPk0Pgo3qQFhAUH-B6i-dCqqc_mCkRIzULmwzwecnohLhrcH8A9mpWIZqA7ygc52Sr81hE?w=500&auto=format",
+    bid: "Hot Bid",
+    profile: "http://funto.designing-world.com/img/bg-img/u4.jpg",
+    stock: "29 stock availabe",
+    name: "Vigor Dance",
+    email: "@nft_fun",
+    price: "0.784",
+  },
 ];

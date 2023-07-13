@@ -2,16 +2,16 @@ import React from "react";
 import { BsBag } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 
-const TrendingCard = ({ aution }) => {
+const CollectionCard = ({ aution }) => {
   return (
-    <div key={aution.id} className="group">
-      <div className="flex flex-col gap-4 bg-secondary p-5 rounded-xl group-hover:-translate-y-1 duration-300">
-        <div className="relative">
-          <div className="w-full overflow-hidden rounded-lg duration-300">
+    <div key={aution.id} className="group w-full 2xl:w-[360px] 3xl:w-[410px]">
+      <div className="flex flex-col overflow-hidden gap-4 category-bg p-5 rounded-xl group-hover:-translate-y-1 duration-300">
+        <div className="relative overflow-hidden">
+          <div className="w-full overflow-hidden rounded-xl duration-300">
             <img
               src={aution.image}
               alt=""
-              className="group-hover:scale-110 duration-300"
+              className="group-hover:scale-110 duration-300 rounded-lg"
             />
           </div>
           <div className="absolute top-4 left-4">
@@ -113,4 +113,4 @@ const TrendingCard = ({ aution }) => {
   );
 };
 
-export default TrendingCard;
+export default CollectionCard;
