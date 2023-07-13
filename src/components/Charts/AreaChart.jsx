@@ -67,7 +67,7 @@ const AreaChart = () => {
         ],
         fill: true,
         pointRadius: 1,
-        backgroundColor: "rgba(193, 84, 210, 0.44)",
+        backgroundColor: "rgba(171, 56, 208, 0.67)",
         borderColor: "rgba(140, 26, 158, 0.44)",
         borderWidth: 4,
         tension:0.4,

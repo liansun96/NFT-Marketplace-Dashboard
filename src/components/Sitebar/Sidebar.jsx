@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa";
-import { FaUnlockKeyhole } from "react-icons/fa6";
+import { RiSettings4Fill } from "react-icons/ri";
 import { BsHammer, BsFillGridFill, BsSpeedometer } from "react-icons/bs";
 import { IoIosWallet } from "react-icons/io";
 import "./Sitebar.css";
@@ -25,16 +25,19 @@ const Sidebar = () => {
     location.pathname.startsWith("/wallet") ||
     location.pathname.startsWith("/recharge");
 
+  const isActiveAccount = location.pathname.startsWith("/account");
+
   return (
-    <div className="h-screen overflow-y-scroll bg-primary text-body_text sticky top-0 left-0 custom-dark-shadow">
-      <div className="flex justify-between px-4 py-6">
-        <img
-          src="https://themebeyond.com/html/nftmak/assets/img/logo/naftmak.svg"
-          className="mx-auto scale-125 my-2"
-          alt=""
-        />
-        
-      </div>
+    <div className=" h-screen overflow-y-scroll bg-primary text-body_text sticky top-0 left-0 custom-dark-shadow">
+      <Link to={'/'}>
+        <div className="flex justify-between px-4 py-6">
+          <img
+            src="https://themebeyond.com/html/nftmak/assets/img/logo/naftmak.svg"
+            className="mx-auto scale-125 my-2"
+            alt=""
+          />
+        </div>
+      </Link>
       <div className="px-4 py-6">
         <div className="bg-secondary custom-light-shadow p-5 rounded-xl">
           <h6 className="text-lg font-semibold text-center">Current Balance</h6>
@@ -50,9 +53,11 @@ const Sidebar = () => {
           </div>
           <div className="transform duration-1000 transition text-center hover:bg-gradient-to-l from-[#cc42e4] to-[#6345ed] bg-gradient-to-r from-[#bc3cd3] to-[#6345ed] p-1 rounded-full">
             <div className="border border-[#fff] border-dashed bg-transparent rounded-3xl">
-              <button className="px-6 py-2 text-sm  font-bold text-heading_text">
-                RECHARGE
-              </button>
+              <Link to={"/"}>
+                <button className="px-6 py-2 text-sm  font-bold text-heading_text">
+                  RECHARGE
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -169,7 +174,7 @@ const Sidebar = () => {
                 My Wallet
               </li>
             </NavLink>
-            <NavLink to={"/recharge"}>
+            <NavLink to={"/wallet"}>
               <li className="sub-site-link mb-3 hover:text-white sub-menu">
                 Recharge
               </li>
@@ -177,10 +182,16 @@ const Sidebar = () => {
           </ul>
         </li>
         <li onClick={() => setShowAuth(!showAuth)}>
-          <Link className="flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d]  py-4 px-4 rounded-full">
+          <Link
+            className={`${
+              isActiveAccount
+                ? "active flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d] py-4 px-4 rounded-full"
+                : ""
+            }flex items-center justify-between hover:bg-gradient-to-r from-[#2a2846] to-[#23203d] py-4 px-4 rounded-full`}
+          >
             <div className="flex gap-3 2xl:gap-4">
-              <FaUnlockKeyhole className="text-lg" />
-              <p className="text-sm font-semibold">Authentication</p>
+              <RiSettings4Fill className="text-lg" />
+              <p className="text-sm font-semibold">Settings</p>
             </div>
             <FaAngleDown
               className={`${showAuth && "-rotate-180"} text-lg duration-300`}
@@ -192,24 +203,31 @@ const Sidebar = () => {
               showAuth ? "min-h-max opacity-100" : "h-0 opacity-0 hidden"
             } duration-10 ms-16 text-xs font-bold cursor-pointer`}
           >
-            <li className="sub-site-link my-3 hover:text-white sub-menu">
-              Sign up
-            </li>
-            <li className="sub-site-link mb-3 hover:text-white sub-menu">
-              Sign In
-            </li>
-            <li className="sub-site-link mb-3 hover:text-white sub-menu">
-              Reset Password
-            </li>
-            <li className="sub-site-link mb-3 hover:text-white sub-menu">
-              Email Verification
-            </li>
-            <li className="sub-site-link mb-3 hover:text-white sub-menu">
-              2-setp Verification
-            </li>
-            <li className="sub-site-link mb-3 hover:text-white sub-menu">
-              Error
-            </li>
+            <Link to={"/account"}>
+              <li className="sub-site-link mb-3 hover:text-white sub-menu">
+                Account
+              </li>
+            </Link>
+            <Link to={"/account"}>
+              <li className="sub-site-link mb-3 hover:text-white sub-menu">
+                Reset Password
+              </li>
+            </Link>
+            <Link to={"/account"}>
+              <li className="sub-site-link mb-3 hover:text-white sub-menu">
+                Email Verification
+              </li>
+            </Link>
+            <Link to={"/account"}>
+              <li className="sub-site-link mb-3 hover:text-white sub-menu">
+                2-setp Verification
+              </li>
+            </Link>
+            <Link to={"/account"}>
+              <li className="sub-site-link mb-3 hover:text-white sub-menu">
+                Error
+              </li>
+            </Link>
           </ul>
         </li>
       </ul>

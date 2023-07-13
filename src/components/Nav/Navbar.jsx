@@ -1,12 +1,14 @@
 import React from "react";
 import { BiSearch } from "react-icons/bi";
 import { PiBell, PiMoon } from "react-icons/pi";
+import { HiMenuAlt3 } from "react-icons/hi";
 import { stateContextCustom } from "../../context/StateContext";
 import uk from "../../assets/icons8-great-britain-96.png";
 import Theme from "./Theme";
 import Languages from "./Languages";
 import Notification from "./Notification";
 import Profile from "./Profile";
+import MobileMenu from "../mobileMenu/MobileMenu";
 
 const Navbar = () => {
   const {
@@ -22,6 +24,8 @@ const Navbar = () => {
     toggleSetting,
     showProfile,
     toggleProfile,
+    isOpen,
+    setIsOpen
   } = stateContextCustom();
   console.log(image);
   const closeSideBars = () => {
@@ -33,7 +37,6 @@ const Navbar = () => {
   return (
     <>
       <main className="bg-[#070b24ec] bg- flex relative w-full items-center justify-center md:justify-between md:px-10 p-5 shadow-lg">
-
         <div className="hidden relative w-[287.5px] md:flex items-center shadow rounded-md">
           <input
             type="text"
@@ -44,8 +47,14 @@ const Navbar = () => {
             <BiSearch className="text-gray-400" />
           </button>
         </div>
+        <div className="absolute top-0 right-0 block lg:hidden">
+          <MobileMenu  isOpen={isOpen} setIsOpen={setIsOpen} />
+        </div>
         <div className="flex">
           {/* Select Theme */}
+          <div onClick={() => setIsOpen(!isOpen)}>
+            <HiMenuAlt3 className="block lg:hidden cursor-pointer text-white text-4xl ms-auto" />
+          </div>
           <div className="relative mx-5">
             <button onClick={toggleShow} className="nav-btn">
               <PiMoon className="" />

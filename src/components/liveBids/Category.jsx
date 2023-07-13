@@ -8,7 +8,7 @@ import "./bidslist.css";
 const Category = () => {
   return (
     <div className="w-[95%] mx-auto py-4">
-      <div className="flex justify-between gap-5 category-bg cartgory-shadow p-4 rounded-xl">
+      <div className="flex flex-col md:flex-row justify-between gap-5 category-bg cartgory-shadow p-4 rounded-xl">
         <div className="h-[130px] w-full">
           <div className="flex justify-center items-center h-[130px] gap-6">
             <div className="flex justify-center items-center bg-[#1fbcff] w-[70px] h-[70px] rounded-full">

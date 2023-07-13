@@ -7,15 +7,16 @@ import { HiShare } from "react-icons/hi";
 import { FaPinterestP, FaLinkedinIn, FaRocket } from "react-icons/fa";
 import { NavLink, Outlet, useParams, Link } from "react-router-dom";
 import Navbar from "../Nav/Navbar";
-import { activeBids } from "../../constants/livebids";
+import { autions } from "../Charts/Activity";
 
-const ItemDetail = () => {
+
+const CollectionDetail = () => {
   const { id } = useParams();
-  console.log(activeBids);
+  console.log(autions);
 
-  const activeBidsId = id;
-  const activeBid = activeBids.find((item) => item.id === activeBidsId);
-  console.log(activeBidsId);
+  const autionId = id;
+  const aution = autions?.find((item) => item.id === autionId);
+  console.log(aution);
 
   return (
     <div className="min-h-full bg-secondary font-Poppins">
@@ -25,9 +26,9 @@ const ItemDetail = () => {
         </div>
 
         <div className="w-[95%] my-6 flex mx-auto 3xl:w-3/4 justify-between">
-          <Link to="/bids-list">
+          <Link to="/collection-list">
             <h1 className="sm:p-3 p-2 text-gray-300 px-4 sm:px-6 text-xs sm:text-sm rounded-full  hover:bg-[#E039FD] duration-200 bg-[#241F3D] font-semibold">
-              GO BACK TO BIDS LIST
+              GO BACK TO COLLECTION
             </h1>
           </Link>         
         </div>
@@ -40,7 +41,7 @@ const ItemDetail = () => {
         <div className="bg-primary scale-95 rounded-3xl sm:max-md:col-span-8 col-span-8 3xl:col-span-3 lg:col-span-4">
           <img
             className="mx-auto w-full h-full overflow-hidden rounded-3xl -translate-x-2 -translate-y-2"
-            src={activeBid.itemImage}
+            src={aution?.image}
             alt="photo"
           />
         </div>
@@ -50,7 +51,7 @@ const ItemDetail = () => {
           <div className="flex justify-between">
             <div className="">
               <p className="text-white  items-center flex h-full sm:text-[2rem] tracking-wider text-4xl font-bold">
-                {activeBid.title}
+                {aution?.name}
               </p>
             </div>
             <div className="flex items-center">
@@ -76,7 +77,7 @@ const ItemDetail = () => {
             <div className="bg-[#241F3D] shadow-xl md:max-lg:flex-col flex-none  xl:flex rounded-md p-4">
               <img
                 className="rounded-full md:max-lg:mx-auto md:max-lg:mb-2 mx-auto xl:mx-0 md:max-lg:w-[50px] h-[50px]"
-                src={activeBid.recentOfferProfile}
+                src={aution?.profile}
                 alt="girl"
               />
               <div className="md:max-lg:text-center text-center xl:ms-5">
@@ -308,4 +309,4 @@ const ItemDetail = () => {
   );
 };
 
-export default ItemDetail;
+export default CollectionDetail;

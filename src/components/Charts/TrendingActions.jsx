@@ -11,7 +11,7 @@ import TrendingCard from "./TrendingCard";
 
 const TrendingActions = () => {
   return (
-    <div className="flex flex-col gap-5 justify-between py-5 ps-5 category-bg rounded-xl w-full lg:w-[49.3%]">
+    <div className="flex flex-col gap-5 justify-between p-5 lg:py-5 lg:ps-5 category-bg rounded-xl w-full lg:w-[49.3%]">
       <div className="flex items-center gap-1">
         <div className="">
           <img
@@ -88,9 +88,31 @@ const TrendingActions = () => {
         </Swiper>
       </div>
 
-      <div className="hidden 3xl:block trending overflow-hidden">
+      <div className="hidden 3xl:block 4xl:hidden trending overflow-hidden">
         <Swiper
           slidesPerView={2.8}
+          spaceBetween={20}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper hidden lg:block"
+        >
+          {autions?.map((aution) => (
+            <SwiperSlide key={aution?.id}>
+              <TrendingCard aution={aution} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      <div className="hidden 4xl:block trending overflow-hidden">
+        <Swiper
+          slidesPerView={3.7}
           spaceBetween={20}
           autoplay={{
             delay: 1000,

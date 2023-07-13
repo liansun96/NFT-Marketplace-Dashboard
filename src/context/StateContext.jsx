@@ -12,6 +12,7 @@ export const StateContextProvider = ({ children }) => {
   const [showStatus, setShowStatus] = useState(false)
   const [showPass, setShowPass] = useState(false)
   const [token, setToken] = useState(false)
+  const [isOpen, setIsOpen] = useState(true);
   const nav = useNavigate()
 
   const submitHandler = () => {
@@ -64,8 +65,11 @@ export const StateContextProvider = ({ children }) => {
     showPass,
     toggleShowPass,
     token,
+    setToken,
     submitHandler,
     hide,
+    isOpen,
+    setIsOpen
   };
   return <stateContext.Provider value={data}>{children}</stateContext.Provider>;
 };

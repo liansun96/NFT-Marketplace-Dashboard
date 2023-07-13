@@ -1,18 +1,24 @@
 import React from "react";
 import { BsBag } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const TrendingCard = ({ aution }) => {
+const CollectionCard = ({ aution }) => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/collection-detail/${aution?.id}`);
+  };
   return (
-    <div key={aution.id} className="group">
-      <div className="flex flex-col gap-4 bg-secondary p-5 rounded-xl group-hover:-translate-y-1 duration-300">
-        <div className="relative">
-          <div className="w-full overflow-hidden rounded-lg duration-300">
+    <div key={aution.id} className="group w-full lg:w-[250px] 2xl:w-[280px] 3xl:w-[320px]">
+      <div className="flex flex-col overflow-hidden gap-4 category-bg p-5 rounded-xl group-hover:-translate-y-1 duration-300">
+        <div className="relative overflow-hidden">
+          <div className="w-full overflow-hidden rounded-xl duration-300">
             <img
               src={aution.image}
               alt=""
-              className="group-hover:scale-110 duration-300"
+              className="group-hover:scale-110 duration-300 rounded-lg"
             />
           </div>
           <div className="absolute top-4 left-4">
@@ -117,19 +123,17 @@ const TrendingCard = ({ aution }) => {
         </div>
 
         <div className="w-full">
-          <Link to="/collection-list">
-            <div className="transform duration-1000 transition text-center hover:bg-gradient-to-l from-[#cc42e4] to-[#6345ed] bg-gradient-to-r from-[#bc3cd3] to-[#6345ed] p-1 rounded-full">
-              <div className="border border-[#fff] border-dashed bg-transparent rounded-3xl">
-                <button className="px-6 py-2 text-xs  font-bold text-heading_text">
-                  Place Bid
-                </button>
-              </div>
+          <div className="transform duration-1000 transition text-center hover:bg-gradient-to-l from-[#cc42e4] to-[#6345ed] bg-gradient-to-r from-[#bc3cd3] to-[#6345ed] p-1 rounded-full">
+            <div className="border border-[#fff] border-dashed bg-transparent rounded-3xl">
+              <button onClick={handleClick} className="px-6 py-2 text-xs  font-bold text-heading_text">
+                Place Bid
+              </button>
             </div>
-          </Link>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default TrendingCard;
+export default CollectionCard;
