@@ -10,12 +10,12 @@ const Dashboard = () => {
   const nav = useNavigate();
   const { token } = stateContextCustom(); 
   useEffect(() => {
-    setIsLoading(true);
-      setTimeout(() => {
-        !token && nav("sign-in")
-        setIsLoading(false);
-      }, 2000);
-  },[])
+    !token && nav("sign-in")
+    // setIsLoading(true);
+    //   setTimeout(() => {
+    //     setIsLoading(false);
+    //   }, 2000);
+  },[]);
 
   if (isLoading) {
     return (
@@ -26,14 +26,14 @@ const Dashboard = () => {
   }
   return (
     <>
-    { token && <div className="flex">
+     <div className="flex">
       <div className="w-[0%] lg:w-[17%] z-10">
         <Sidebar />
       </div>
       <div className="w-full lg:w-[83%]">
         <Outlet />
       </div>
-    </div>}
+    </div>
     </>
   );
 };
