@@ -8,7 +8,7 @@ const Collection = () => {
       <h6 className="text-white text-xl font-bold my-4">Collection</h6>
       <div className="flex flex-wrap justify-between gap-10 md:gap-6 pb-10">
         {autions.map((aution) => {
-          return <CollectionCard aution={aution} />;
+          return <CollectionCard key={aution.id} aution={aution} />;
         })}
       </div>
     </div>
