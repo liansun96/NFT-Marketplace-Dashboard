@@ -15,7 +15,7 @@ import Swal from "sweetalert2";
 
 
 export default function SignIn() {
-  const { showPass, toggleShowPass } = stateContextCustom();
+  const { showPass, toggleShowPass, setToken } = stateContextCustom();
   const [email, setEmail] = useState("mazanovsky@nft.com");
   const [password, setPassword] = useState("password");
   const [isLoading, setIsLoading] = useState(false);
@@ -25,6 +25,7 @@ export default function SignIn() {
     e.preventDefault()
     if (email === "mazanovsky@nft.com" && password === "password") {
       setIsLoading(true);
+      setToken(true)
       setTimeout(() => {
         setIsLoading(false);
         nav("/")
