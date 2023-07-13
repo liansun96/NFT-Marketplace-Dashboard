@@ -33,11 +33,11 @@ const Path = () => {
           <Route path="info" element={<Info />} />
           <Route path="pro" element={<Provenance />} />
         </Route>
-        <Route path="/collection-detail/:id" element={<CollectionDetail />}>
+        {/* <Route path="/collection-detail/:id" element={<CollectionDetail />}>
           <Route path="" index element={<BidHistoryC />} />
           <Route path="info" element={<InfoC />} />
           <Route path="pro" element={<ProvenanceC />} />
-        </Route>
+        </Route> */}
         <Route path="/collection-list" element={<CollectionList />} />
         <Route path="/create-new-bid" element={<Create />} />
         <Route
