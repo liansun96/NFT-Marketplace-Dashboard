@@ -44,13 +44,13 @@ const CreateNewCollection = () => {
         <Navbar />
       </div>
       <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-10 w-[95%] mx-auto py-10">
-        <div className="flex flex-col gap-5 p-10 rounded-xl border border-gray-700 category-bg w-[75%]">
+        <div className="flex flex-col gap-5 p-5 lg:p-10 rounded-xl border border-gray-700 category-bg w-full lg:w-[75%]">
           <h1 className="text-heading_text text-2xl font-semibold">
             Create New NFT
           </h1>
           <form>
             <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2 w-[30%]">
+              <div className="flex flex-col gap-2w w-full lg:w-[30%]">
                 <label className="text-sm text-body_text">Upload Files</label>
                 <input
                   type="file"
@@ -59,8 +59,8 @@ const CreateNewCollection = () => {
               </div>
 
               {/* radios */}
-              <div className="flex items-center gap-4 mt-2">
-                <div className="flex items-start gap-2">
+              <div className="flex flex-wrap lg:flex-nowrap items-center gap-4 mt-2">
+                <div className="flex items-center lg:items-start gap-2">
                   <input
                     type="radio"
                     checked={selectedRadio === "fixed"}
@@ -68,7 +68,7 @@ const CreateNewCollection = () => {
                   />
                   <p className="text-sm text-body_text mb-0">Fixed price</p>
                 </div>
-                <div className="flex items-start gap-2">
+                <div className="flex items-center lg:items-start gap-2">
                   <input
                     type="radio"
                     checked={selectedRadio === "unlock"}
@@ -78,7 +78,7 @@ const CreateNewCollection = () => {
                     Unlock Purchased
                   </p>
                 </div>
-                <div className="flex items-start gap-2">
+                <div className="flex items-center lg:items-start gap-2">
                   <input
                     type="radio"
                     checked={selectedRadio === "bids"}
@@ -111,8 +111,8 @@ const CreateNewCollection = () => {
               </div>
 
               {/* price & category */}
-              <div className="flex items-center gap-5">
-                <div className="w-[50%]">
+              <div className="flex flex-wrap lg:flex-nowrap items-center gap-5">
+                <div className="w-full lg:w-[50%]">
                   <label htmlFor="" className="text-body_text text-sm">
                     Price
                   </label>
@@ -123,7 +123,7 @@ const CreateNewCollection = () => {
                   />
                 </div>
 
-                <div className="w-[50%] flex flex-col gap-1">
+                <div className="w-full lg:w-[50%] flex flex-col gap-1">
                   <label
                     htmlFor="options"
                     className="text-body_text text-md font-semibold"
@@ -156,8 +156,8 @@ const CreateNewCollection = () => {
               </div>
 
               {/* calender */}
-              <div className="flex items-center gap-5">
-                <div className="relative w-[50%]">
+              <div className="flex flex-wrap lg:flex-nowrap items-center gap-5">
+                <div className="relative w-full lg:w-[50%]">
                   <label htmlFor="" className="text-sm text-body_text">
                     Starting Date
                   </label>
@@ -185,7 +185,7 @@ const CreateNewCollection = () => {
                   )}
                 </div>
 
-                <div className="relative w-[50%]">
+                <div className="relative w-full lg:w-[50%]">
                   <label htmlFor="" className="text-sm text-body_text">
                     Ending Date
                   </label>
@@ -215,8 +215,8 @@ const CreateNewCollection = () => {
               </div>
 
               {/* royal & copy & size */}
-              <div className="flex items-center justify-between gap-5">
-                <div className="w-[32%]">
+              <div className="flex flex-wrap lg:flex-nowrap items-center justify-between gap-5">
+                <div className="w-full lg:w-[32%]">
                   <label htmlFor="" className="text-body_text text-sm">
                     Royality
                   </label>
@@ -226,7 +226,7 @@ const CreateNewCollection = () => {
                     placeholder="5%"
                   />
                 </div>
-                <div className="w-[32%]">
+                <div className="w-full lg:w-[32%]">
                   <label htmlFor="" className="text-body_text text-sm">
                     None of copy
                   </label>
@@ -236,7 +236,7 @@ const CreateNewCollection = () => {
                     placeholder="13"
                   />
                 </div>
-                <div className="w-[32%]">
+                <div className="w-full lg:w-[32%]">
                   <label htmlFor="" className="text-body_text text-sm">
                     Size
                   </label>
@@ -250,7 +250,7 @@ const CreateNewCollection = () => {
 
               {/* Create */}
               <div className="flex items-center justify-between mt-5">
-                <div className="flex items-start gap-1">
+                <div className="flex items-center gap-1">
                   <input type="checkbox" />
                   <span className="text-sm text-body_text">
                     I agree to all terms & conditions.
@@ -268,7 +268,7 @@ const CreateNewCollection = () => {
           </form>
         </div>
 
-        <div className="w-[25%]">
+        <div className="w-full lg:w-[25%]">
           <div className="group">
             <div className="flex flex-col gap-4 category-bg p-5 rounded-xl group-hover:-translate-y-1 duration-300">
               <div className="relative">
